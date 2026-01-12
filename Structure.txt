@@ -1,0 +1,35 @@
+project-root/
+├─ Backend/
+│  ├─ package.json
+│  └─ .env
+│  └─ index.js
+└─ Frontend/
+   ├─ package.json
+   ├─ index.html
+   ├─ src/
+     └─ assets/
+     └─ App.css
+     └─ App.jsx
+     └─ main.jsx
+     └─ pages/
+       ├─ Home.jsx
+       └─ About.jsx
+       └─ Skills.jsx
+       └─ Project.jsx
+       └─ MoreProject.jsx
+       └─ Certification.jsx
+       └─ Contact.jsx
+     └─ components/
+       ├─ NavbarMain.jsx
+       └─ Navbar.jsx
+       └─ Footer.jsx
+       └─ ProjectCard.jsx
+       └─ ECommerceWebsiteCard.jsx
+       └─ MovieSearchPageCard.jsx
+       └─ SignUpPageCard.jsx
+       └─ EventBookingWebsiteCard.jsx
+       └─ MusicPlayerCard.jsx
+     └─ data/
+       ├─ projectList.js
+       └─ projectPreview.js
+   └─ vite.config.js
