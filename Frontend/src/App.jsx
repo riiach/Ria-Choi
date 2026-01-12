@@ -174,7 +174,7 @@ export default function ExpandingLottieWindow() {
             <div className="fixed top-0 left-0 w-full z-50 pointer-events-auto"
                  style={{
                      opacity: 0,
-                     transition: 'opacity 0.3s ease'
+                     transition: 'opacity 0.6s ease'
                  }}
                  ref={(el) => {
                      if (el) {
