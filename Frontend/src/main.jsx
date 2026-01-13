@@ -5,6 +5,8 @@ import App from './App.jsx';
 import "@fontsource/poppins/500.css";
 import './index.css';
 
+console.log("main.jsx running");
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <BrowserRouter>

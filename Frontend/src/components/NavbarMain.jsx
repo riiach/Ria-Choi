@@ -7,7 +7,7 @@ function NavbarMain() {
             <div className="w-full px-10 py-10">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
                     <div className="space-y-2">
-                        <p className="text-sm font-semibold tracking-wide text-white/90">
+                        <p className="text-sm font-semibold tracking-wide text-white/90 pointer-events-none">
                             Role
                         </p>
                         <div className="space-y-1 text-sm text-white/60">
