@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 const Section = () => {
     return (
-        <div className="flex flex-col gap-4 text-white p-4 m-8 mb-24 sm:p-4 sm:m-8 md:p-8 md:m-10">
+        <div className="flex flex-col gap-4 text-white m-8 mb-24 sm:p-4 sm:m-8 p-0 md:p-8 md:m-10">
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-4 group">
                     <p className="text-4xl sm:text-4xl md:text-7xl font-medium text-gray-500">01</p>

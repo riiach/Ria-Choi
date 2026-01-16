@@ -175,7 +175,7 @@ export default function Home() {
             <section ref={section2Ref} className="relative w-[100vw] h-[100vh] z-20 flex items-center">
                 <div ref={textRef} className="absolute left-10 z-50 text-white font-medium pointer-events-none">
                     {/* Mobile */}
-                    <h1 className="block md:hidden text-5xl">
+                    <h1 className="block md:hidden text-7xl">
                         Hi,<br/>
                         I'm a Full-Stack<br/>
                         Developer from<br/>

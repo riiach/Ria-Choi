@@ -193,7 +193,7 @@ const About = () => {
                         <p>Grew up in Busan, South Korea</p>
                     </div>
                     <div className="text-white" ref={revealRef4}>
-                        <p>Positive</p>
+                        <p>Detail Oriented</p>
                         <p>Solution Prone</p>
                         <p>Team Player</p>
                     </div>

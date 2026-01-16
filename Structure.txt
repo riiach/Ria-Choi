@@ -24,11 +24,11 @@ project-root/
        └─ Navbar.jsx
        └─ Footer.jsx
        └─ ProjectCard.jsx
-       └─ ECommerceWebsiteCard.jsx
-       └─ MovieSearchPageCard.jsx
-       └─ SignUpPageCard.jsx
-       └─ EventBookingWebsiteCard.jsx
-       └─ MusicPlayerCard.jsx
+       └─ ECommerceWebsite.jsx
+       └─ MovieSearchPage.jsx
+       └─ SignUpPage.jsx
+       └─ EventBookingWebsite.jsx
+       └─ MusicPlayer.jsx
      └─ data/
        ├─ projectList.js
        └─ projectPreview.js

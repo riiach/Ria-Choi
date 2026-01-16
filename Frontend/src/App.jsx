@@ -6,6 +6,11 @@ import MoreProject from "./pages/MoreProject";
 import Skills from "./pages/Skills";
 import Certification from "./pages/Certification";
 import Contact from "./pages/Contact";
+import ECommerceWebsite from "./pages/ECommerceWebsite.jsx"
+import SignUpPage from "./pages/SignUpPage.jsx"
+import MovieSearchPage from "./pages/MovieSearchPage.jsx"
+import EventBookingWebsite from "./pages/EventBookingWebsite.jsx"
+import MusicPlayer from "./pages/MusicPlayer.jsx"
 
 export default function App() {
 
@@ -18,6 +23,11 @@ export default function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/certification" element={<Certification />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/ecommercewebsite" element={<ECommerceWebsite />} />
+            <Route path="/projects/signuppage" element={<SignUpPage />} />
+            <Route path="/projects/moviesearchpage" element={<MovieSearchPage />} />
+            <Route path="/projects/eventbookingwebsite" element={<EventBookingWebsite />} />
+            <Route path="/projects/musicplayer" element={<MusicPlayer />} />
         </Routes>
     );
 }

@@ -12,6 +12,74 @@ const Skills = () => {
     const sectionRef = useRef(null);
     const elRef = useRef(null);
 
+    const skills = [
+        {
+            number: "01",
+            title: "React",
+            content: "React Certificate"
+        },
+        {
+            number: "02",
+            title: "JavaScript",
+            content: "JavaScript Certificate"
+        },
+        {
+            number: "03",
+            title: "HTML/CSS",
+            content: "Responsive Web Design Certificate"
+        },
+        {
+            number: "04",
+            title: "Express",
+            content: ""
+        },
+        {
+            number: "05",
+            title: "Tailwind CSS",
+            content: ""
+        },
+        {
+            number: "06",
+            title: "Mongo DB",
+            content: ""
+        },
+        {
+            number: "07",
+            title: "My SQL",
+            content: ""
+        },
+        {
+            number: "08",
+            title: "Azure",
+            content: "Azure Fundamental"
+        },
+        {
+            number: "09",
+            title: "AWS",
+            content: "AWS Course Certificate"
+        },
+        {
+            number: "10",
+            title: "Docker",
+            content: "Docker Course Certificate"
+        },
+        {
+            number: "11",
+            title: "Figma",
+            content: ""
+        },
+        {
+            number: "12",
+            title: "Photoshop",
+            content: "Photoshop Certificate"
+        },
+        {
+            number: "13",
+            title: "After Effect",
+            content: ""
+        },
+    ]
+
     useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.from(elRef.current.children, {
@@ -42,79 +110,15 @@ const Skills = () => {
             xl:text-5xl
             2xl:text-6xl
             " ref={elRef}>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">01</p>
-                    <span className="text-white "
-                    data-tooltip-id="detail"
-                    data-tooltip-content="React Certificate 2025"
-                    >React</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">02</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="JavaScript Certificate 2025"
-                    >JavaScript</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">03</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="Frontend Certificate 2025"
-                    >HTML/CSS</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">04</p>
-                    <p className="text-white">Express</p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">05</p>
-                    <p className="text-white">Tailwind CSS</p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">06</p>
-                    <p className="text-white">Mongo DB</p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">07</p>
-                    <p className="text-white">MySQL</p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">08</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="Azure Certificate 2025"
-                    >Azure</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">09</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="AWS Course Certificate"
-                    >AWS</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">10</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="Docker Course Certificate"
-                    >Docker</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">11</p>
-                    <p className="text-white">Figma</p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">12</p>
-                    <span className="text-white "
-                          data-tooltip-id="detail"
-                          data-tooltip-content="Photoshop Certificate 2019"
-                    >Photoshop</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <p className="text-gray-500">13</p>
-                    <p className="text-white">After Effect</p>
-                </div>
+                {skills.map((item, index) => (
+                    <div className="flex items-center gap-4" key={index}>
+                        <p className="text-gray-500">{item.number}</p>
+                        <span className="text-white "
+                              data-tooltip-id="detail"
+                              data-tooltip-content={item.content}
+                        >{item.title}</span>
+                    </div>
+                ))}
             </div>
 
             <Tooltip

@@ -1,19 +1,24 @@
 import { NavLink, useLocation } from 'react-router-dom';
+import { forwardRef } from 'react'
 
-function Navbar() {
+const Navbar = forwardRef(function Navbar(props, ref) {
     const location = useLocation();
     const title =
         location.pathname === '/'
             ? "Ria Choi"
             : location.pathname === '/skills'
             ? "Skills"
+            : location.pathname === '/certification'
+            ? "Certification"
+            : location.pathname === '/projects'
+            ? "Projects"
             : "Ria Choi";
 
     return (
         <nav className="flex items-center
-        p-4 px-10 py-10
+        p-4 md:p-10 py-8 md:py-10
         bg-black w-screen h-8
-        text-sm sm:text-base">
+        text-sm sm:text-base" ref={ref}>
             {/* Left (brand) */}
             <NavLink to="/" className="text-base sm:text-base md:text-2xl text-white/90">
                 {title}
@@ -30,6 +35,6 @@ function Navbar() {
             </div>
         </nav>
     );
-}
+});
 
 export default Navbar;

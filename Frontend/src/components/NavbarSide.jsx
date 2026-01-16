@@ -8,7 +8,7 @@ const NavbarSide = forwardRef(function NavbarSide(props, ref) {
         ref={ref}
         className="
         group
-        fixed top-0 right-0 z-[9999] mt-4 mr-8 p-8 pt-4
+        fixed top-0 right-0 z-[9999] mt-4 p-8 pt-4
         text-sm sm:text-base
         bg-transparent hover:bg-black rounded-xl
         transition-colors duration-300 ease-out
