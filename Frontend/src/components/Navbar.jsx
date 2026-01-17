@@ -22,9 +22,9 @@ const Navbar = forwardRef(function Navbar(props, ref) {
         bg-black w-screen h-8
         text-sm sm:text-base" ref={ref}>
             {/* Left (brand) */}
-            <NavLink to="/" className="text-base sm:text-base md:text-2xl text-white/90">
+            <p className="text-base sm:text-base md:text-2xl text-white/90 pointer-events-none">
                 {title}
-            </NavLink>
+            </p>
 
             {/* Right (menu) */}
             <div className="ml-auto flex gap-2 sm:gap-2 md:gap-4 lg:gap-6 text-white/60">
