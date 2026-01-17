@@ -1,8 +1,9 @@
 import React, { forwardRef } from "react";
-import { NavLink } from 'react-router-dom';
-import {Menu} from "lucide-react";
+import { NavLink, useLocation } from 'react-router-dom';
 
 const NavbarSide = forwardRef(function NavbarSide(props, ref) {
+    const location = useLocation();
+
     return (
         <nav
         ref={ref}
@@ -26,7 +27,7 @@ const NavbarSide = forwardRef(function NavbarSide(props, ref) {
             "
             >
                 <NavLink to="/" className="group/home hover:text-white" >Home</NavLink>
-                <NavLink to="/about" className="group/about hover:text-white">About</NavLink>
+                {location.pathname === '/about' ? "" : <NavLink to="/about" className="group/about hover:text-white">About</NavLink>}
                 <NavLink to="/skills" className="group/skills hover:text-white">Skills</NavLink>
                 <NavLink to="/projects" className="hover:text-white">Projects</NavLink>
                 <NavLink to="/certification" className="hover:text-white">Certification</NavLink>

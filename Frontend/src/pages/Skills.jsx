@@ -78,6 +78,11 @@ const Skills = () => {
             title: "After Effect",
             content: ""
         },
+        {
+            number: "14",
+            title: "Swiper",
+            content: "",
+        },
     ]
 
     useEffect(() => {
@@ -102,7 +107,7 @@ const Skills = () => {
             absolute top-1/2 left-1/2
             -translate-x-1/2 -translate-y-1/2
             flex flex-col flex-wrap gap-0 md:gap-2 ml-8 md:ml-12 lg:ml-24
-            w-2/3 h-2/4
+            w-2/3 h-3/5 md:h-2/4
             text-3xl
             sm:text-3xl
             md:text-4xl

@@ -27,11 +27,11 @@ const Navbar = forwardRef(function Navbar(props, ref) {
             {/* Right (menu) */}
             <div className="ml-auto flex gap-2 sm:gap-2 md:gap-4 lg:gap-6 text-white/60">
                 {location.pathname === '/' ? "" : <NavLink to="/" className="hover:text-white/90">Home</NavLink>}
-                <NavLink to="/about" className="hover:text-white/90">About</NavLink>
-                <NavLink to="/skills" className="hover:text-white/90">Skills</NavLink>
-                <NavLink to="/projects" className="hover:text-white/90">Projects</NavLink>
-                <NavLink to="/certification" className="hover:text-white/90">Certification</NavLink>
-                <NavLink to="/contact" className="hover:text-white/90">Contact</NavLink>
+                {location.pathname === '/about' ? "" : <NavLink to="/about" className="hover:text-white/90">About</NavLink>}
+                {location.pathname === '/skills' ? "" : <NavLink to="/skills" className="hover:text-white/90">Skills</NavLink>}
+                {location.pathname === '/projects' ? "" : <NavLink to="/projects" className="hover:text-white/90">Projects</NavLink>}
+                {location.pathname === '/certification' ? "" : <NavLink to="/certification" className="hover:text-white/90">Certification</NavLink>}
+                {location.pathname === '/contact' ? "" : <NavLink to="/contact" className="hover:text-white/90">Contact</NavLink>}
             </div>
         </nav>
     );

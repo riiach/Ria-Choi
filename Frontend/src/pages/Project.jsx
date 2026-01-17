@@ -58,7 +58,7 @@ const Project = () => {
         <div className="w-screen h-screen bg-black flex flex-col justify-between">
             <Navbar />
             {isLargeScreen ? (
-                <div className="w-full h-3/4 flex flex-row p-4 md:p-10 gap-4">
+                <div className="w-full h-3/4 flex flex-row p-4 md:p-10 gap-4" >
                     {projects.map((project, index) => (
                         <div className="flex flex-col w-full h-full justify-between" key={index}>
                             <div>

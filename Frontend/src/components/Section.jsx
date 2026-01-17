@@ -20,7 +20,7 @@ const Section = () => {
 
                 <div className="flex items-center gap-4 group">
                     <p className="text-4xl sm:text-4xl md:text-7xl font-medium text-gray-500">03</p>
-                    <Link to="/projects" className="text-4xl sm:text-4xl md:text-7xl font-medium pb-1 border-b-4 border-white">Project</Link>
+                    <Link to="/projects" className="text-4xl sm:text-4xl md:text-7xl font-medium pb-1 border-b-4 border-white">Projects</Link>
                     <ArrowUpRight className="w-12 h-12 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
                 </div>
 

@@ -30,6 +30,7 @@ const About = () => {
     const sectionRef = useRef(null);
     const sectionRef1 = useRef(null);
     const sectionRef2 = useRef(null);
+    const photoRef = useRef(null);
     const fadeInRef1 = useRef(null);
     const fadeInRef2 = useRef(null);
     const revealRef1 = useRef(null);
@@ -98,6 +99,12 @@ const About = () => {
                     ease: "sine.out",
                 }
             })
+                .from(photoRef.current, {
+                    opacity: 0,
+                    filter: "blur(5px)",
+                    duration: 0.4,
+                    ease: "sine.out",
+                })
                 .from(revealRef1.current, {
                     opacity: 0,
                     x: -50,
@@ -147,7 +154,7 @@ const About = () => {
             })
                 .from(fadeInRef2.current, {
                     opacity: 0,
-                    y: 50,
+                    y: 30,
                     duration: 0.6,
                     ease: "sine.out",
                 }, "+=0.1")
@@ -199,8 +206,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className={`bg-gray-500 rounded-2xl mr-4 ${styles.box3}`}>
-                    {/* Your image goes here */}
+                <div className={`bg-gray-500 rounded-2xl mr-4 ${styles.box3}`} ref={photoRef}>
+                    {/* Image goes here */}
                 </div>
             </section>
             <section className="w-screen h-screen bg-black flex flex-col sm:flex-col md:flex-col lg:flex-row text-2xl p-8 overflow-y-hidden" ref={sectionRef2}>

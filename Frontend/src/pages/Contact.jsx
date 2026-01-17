@@ -51,6 +51,7 @@ const Contact = () => {
                 .from(profileRef.current, {
                     autoAlpha: 0,
                     duration: 1,
+                    filter: "blur(10px)",
                     ease: "sine.out",
                 }, "<")
                 .from(summaryRef.current, {
@@ -87,7 +88,7 @@ const Contact = () => {
             <Navbar ref={navbarRef}/>
             <div className="w-full h-full flex flex-col justify-between p-4 md:p-10">
                 <div className="w-full h-2/3 flex flex-col md:flex-row justify-between ">
-                    <h1 className="text-8xl md:text-8xl" ref={h1Ref}>Lets's work together</h1>
+                    <h1 className="text-8xl md:text-8xl" ref={h1Ref}>Let's work together</h1>
                     <div className="w-1/2 md:w-1/4 aspect-square md:h-[20rem] xl:h-[24rem] rounded-xl bg-gray-400" ref={profileRef}>
                         {/*Profile Photo goes here*/}
                     </div>
@@ -106,41 +107,40 @@ const Contact = () => {
                             <a href="tel:+811067645238"
                                target="_blank"
                                rel="noreferrer"
+                               className="hover:underline hover:text-white"
                             >+82 10 6764 5238</a>
-                            <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                         </p>
                         <p className="inline-flex group">
                             <a href="https://www.riachoi.com/"
                                target="_blank"
                                rel="noreferrer"
+                               className="hover:underline hover:text-white"
                                >www.riachoi.com</a>
-                            <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                         </p>
                         <p className="inline-flex group">
                             <a href=""
                                target="_blank"
                                rel="noreferrer"
-                               className="text-white"
+                               className="text-white hover:underline"
                                >Check Out My Resume</a>
-                            <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                         </p>
                     </div>
-                    <div className="w-full md:w-1/2 flex flex-col border-t border-white" ref={contactRef}>
+                    <div className="w-full md:w-1/2 flex flex-col border-t border-white/60" ref={contactRef}>
                         {contacts.map((contact, index) => (
-                            <div key={index} className="w-full flex flex-row justify-between border-b border-white items-center pt-2">
+                            <div key={index} className="w-full flex flex-row justify-between border-b border-white/60 items-center pt-2">
                                 <p className="pb-2 leading-none">{contact.contact}</p>
                                 {contact.link ? (
                                     <a
                                         href={contact.address}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center pb-2 leading-none underline group"
+                                        className="inline-flex items-center pb-2 leading-none underline group text-white/60 hover:text-white"
                                     >
                                         {contact.address.replace('mailto:', '')}
                                         <ArrowUpRight className="w-4 h-4 ml-1 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                                     </a>
                                 ) : (
-                                    <p className="pb-2 leading-none">{contact.address}</p>
+                                    <p className="pb-2 leading-none text-white/60">{contact.address}</p>
                                 )}
                             </div>
                         ))}

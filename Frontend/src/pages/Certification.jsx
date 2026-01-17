@@ -110,7 +110,7 @@ const Certification = () => {
                 <div className="flex flex-row justify-between w-full mt-4 text-base md:text-2xl text-white" ref={elRef2}>
                     <p>Check out my Linked In profile for verifications.</p>
                     <p className="inline-flex group">
-                        <a href="https://www.linkedin.com/in/ria-choi-76a658309/" target="_blank" className="hover:underline">Link</a>
+                        <a href="https://www.linkedin.com/in/ria-choi-76a658309/" target="_blank" className="underline">Link</a>
                         <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                     </p>
                 </div>
