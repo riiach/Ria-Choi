@@ -12,6 +12,8 @@ const Navbar = forwardRef(function Navbar(props, ref) {
             ? "Certification"
             : location.pathname === '/projects'
             ? "Projects"
+            : location.pathname === '/moreprojects'
+            ? "📦 More Projects"
             : "Ria Choi";
 
     return (

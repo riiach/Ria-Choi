@@ -11,6 +11,7 @@ import SignUpPage from "./pages/SignUpPage.jsx"
 import MovieSearchPage from "./pages/MovieSearchPage.jsx"
 import EventBookingWebsite from "./pages/EventBookingWebsite.jsx"
 import MusicPlayer from "./pages/MusicPlayer.jsx"
+import MoreProjects from "./pages/MoreProjects.jsx"
 
 export default function App() {
 
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/projects/moviesearchpage" element={<MovieSearchPage />} />
             <Route path="/projects/eventbookingwebsite" element={<EventBookingWebsite />} />
             <Route path="/projects/musicplayer" element={<MusicPlayer />} />
+            <Route path="/moreprojects" element={<MoreProjects />} />
         </Routes>
     );
 }
