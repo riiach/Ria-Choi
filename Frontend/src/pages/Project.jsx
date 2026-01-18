@@ -12,7 +12,7 @@ const Project = () => {
     const projects = [
         {
             title: "E-commerce Website",
-            techniques: ["React", "Redux", "Tailwind", "Express", "Render.com", "Pexels API"],
+            techniques: ["React","Node.js", "Redux", "Tailwind", "Express", "Render.com","Stripe API", "Pexels API"],
             img: "",
             link: "/projects/ecommercewebsite",
         },
