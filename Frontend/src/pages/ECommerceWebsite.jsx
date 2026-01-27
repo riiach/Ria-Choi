@@ -13,10 +13,10 @@ const ECommerceWebsite = () => {
                     This commercial website was built to explore
                     e-commerce fundamentals, focusing on <span className="text-white">shopping cart</span> functionality and
                     <span className="text-white"> backend server requests</span> during checkout.
-                    The site allows users to browse products, add items to a shopping cart,
-                    and proceed through a checkout flow that communicates
-                    with a backend server to process purchase requests, demonstrating
-                    <span className="text-white"> state management, API communication,</span> and secure checkout handling.
+                    This website is built with <span className="text-white">React and Redux, </span>
+                    giving me fine-grained control over how state flows through the application.
+                    I used <span className="text-white">reducers and a centralized Redux store </span>to manage the cart system,
+                    ensuring consistent behavior and a seamless shopping experience across the entire e-commerce site.
                 </p>
                 <Description/>
             </div>

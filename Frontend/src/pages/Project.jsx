@@ -12,31 +12,31 @@ const Project = () => {
     const projects = [
         {
             title: "E-commerce Website",
-            techniques: ["React","Node.js", "Redux", "Tailwind", "Express", "Render.com","Stripe API", "Pexels API"],
-            img: "",
+            techniques: ["React","Express / Node", "Redux", "Tailwind", "Render.com","Stripe API / Pexels API",],
+            img: "https://i.ibb.co/8L67WKGg/shoppin-cart-main.png",
             link: "/projects/ecommercewebsite",
         },
         {
             title: "Sign Up Page",
-            techniques: ["React", "Tailwind", "Express", "MySQL"],
-            img: "",
+            techniques: ["React", "Tailwind", "Express / Node", "MySQL"],
+            img: "https://i.ibb.co/LD7qhtvc/Sign-Up-Content.png",
             link: "/projects/signuppage"
         },
         {
             title: "Movie Search Page",
-            techniques: ["React", "Tailwind", "Express", "TMDB Data Base API"],
-            img: "",
+            techniques: ["React", "Tailwind", "Express / Node", "TMDB Data Base API"],
+            img: "https://i.ibb.co/F2X8bm0/Movie-Search-Content.png",
             link: "/projects/moviesearchpage",
         },
         {
-            title: "Event Booking Page",
-            techniques: ["HTML/CSS", "JavaScript", "GSAP"],
-            img: "",
+            title: "Travel Recommendation",
+            techniques: ["HTML/CSS", "JavaScript", "Express / Node", "Node"],
+            img: "https://i.ibb.co/C3bRwDNT/travel-Today1.png",
             link: "/projects/eventbookingwebsite",
         },
         {
             title: "Music Player",
-            techniques: ["React", "Tailwind", "Express"],
+            techniques: ["HTML/CSS", "JavaScript"],
             img: "",
             link: "/projects/musicplayer",
         }

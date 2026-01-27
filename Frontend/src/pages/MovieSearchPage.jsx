@@ -56,25 +56,21 @@ const MovieSearchPage = () => {
                 <div className="w-full h-1/4 md:h-2/4 xl:h-3/4 flex flex-row gap-4" ref={boxRef}>
                     <div
                         className="w-1/2 aspect-square rounded-xl bg-gray-400"
-                        /*
                         style={{
-                            backgroundImage: `url(${})`,
+                            backgroundImage: "url('https://i.ibb.co/F2X8bm0/Movie-Search-Content.png')",
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
                         }}
-                        */
                     ></div>
                     <div
                         className="w-1/2 aspect-square rounded-xl bg-gray-400"
-                        /*
                         style={{
-                            backgroundImage: `url(${})`,
+                            backgroundImage: "url('https://i.ibb.co/dFnwSRs/Movie-Search-Content2.png')",
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
                         }}
-                        */
                     ></div>
                 </div>
             </div>

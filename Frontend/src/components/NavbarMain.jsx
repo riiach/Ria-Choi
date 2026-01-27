@@ -12,7 +12,7 @@ function NavbarMain() {
                         </p>
                         <div className="space-y-1 text-sm text-white/60">
                             <p>Entry-Level</p>
-                            <p>Full-Stack Developer</p>
+                            <p>Frontend Developer</p>
                         </div>
                     </div>
 
@@ -23,6 +23,8 @@ function NavbarMain() {
                         <div className="space-y-1 text-sm text-white/60">
                             <p>React</p>
                             <p>Express</p>
+                            <p>Node</p>
+                            <p>Cors</p>
                             <p>GSAP Animation</p>
                         </div>
                     </div>

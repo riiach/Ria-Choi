@@ -36,16 +36,58 @@ const CardSlide = () => {
                 <div ref={upTrack} className="flex flex-col">
                     {/* group 1 */}
                     <div className="flex flex-col items-center gap-4 py-2 ">
-                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">1</div>
-                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">2</div>
-                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">3</div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/bMgfZLt9/shoppin-cart-content1.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/8L67WKGg/shoppin-cart-main.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/prN5TyxM/shoppin-cart-content2.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
                     </div>
 
                     {/* group 2 (duplicate) */}
                     <div className="flex flex-col items-center gap-4 py-2" aria-hidden>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-itemscenter">1</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">2</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">3</div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/bMgfZLt9/shoppin-cart-content1.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/8L67WKGg/shoppin-cart-main.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[95%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/prN5TyxM/shoppin-cart-content2.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
                     </div>
                 </div>
             </div>
@@ -55,16 +97,58 @@ const CardSlide = () => {
                 <div ref={downTrack} className="flex flex-col">
                     {/* group 1 */}
                     <div className="flex flex-col items-center gap-4 py-2">
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">1</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">2</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">3</div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/0VmWfzGx/shoppin-cart-content4.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/kVR3pWJr/shoppin-cart-content5.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/0VmWfzGx/shoppin-cart-content4.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
                     </div>
 
                     {/* group 2 (duplicate) */}
                     <div className="flex flex-col items-center gap-4 py-2" aria-hidden>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">1</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">2</div>
-                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center">3</div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/0VmWfzGx/shoppin-cart-content4.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/kVR3pWJr/shoppin-cart-content5.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
+                        <div className="h-[15em] w-[99%] md:w-[99%] bg-gray-400 rounded-xl text-5xl grid place-items-center"
+                             style={{
+                                 backgroundImage: "url('https://i.ibb.co/0VmWfzGx/shoppin-cart-content4.png')",
+                                 backgroundSize: 'cover',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPosition: 'center',
+                             }}
+                        ></div>
                     </div>
                 </div>
             </div>

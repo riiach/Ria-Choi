@@ -2,11 +2,13 @@ import React from 'react'
 import gsap from "gsap"
 import { useRef, useEffect, useState } from "react";
 import { Draggable } from 'gsap/Draggable';
-import TestImg1 from '../assets/TestImg1.jpg';
-import TestImg2 from '../assets/TestImg2.jpg';
-import TestImg3 from '../assets/TestImg3.jpg';
 
 gsap.registerPlugin(Draggable);
+
+const TestImg1 = "https://i.ibb.co/LD7qhtvc/Sign-Up-Content.png";
+const TestImg2 = "https://i.ibb.co/MyKtqk5R/Sign-Up-Main.png";
+const TestImg3 = "https://i.ibb.co/9kMYfTVT/Sign-Up-Content2.png";
+
 
 const CardToggleSlide = () => {
     const [bgImage1,setBgImage1] = useState(TestImg1);

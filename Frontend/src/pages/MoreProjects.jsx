@@ -53,12 +53,12 @@ const MoreProjects = () => {
         },
         {
             name: "Dice Roll Simulator",
-            course: "personal Project",
+            course: "Personal Project",
             link: "",
         },
         {
             name: "La Maison",
-            course: "personal Project",
+            course: "Personal Project",
             link: "",
         },
     ];
@@ -105,7 +105,7 @@ const MoreProjects = () => {
     }, []);
 
     return (
-        <div className="w-screen md:h-screen flex flex-col justify-between bg-black" ref={sectionRef}>
+        <div className="w-screen h-auto lg:h-screen flex flex-col justify-between bg-black" ref={sectionRef}>
             <Navbar />
 
             {/* DESKTOP */}
