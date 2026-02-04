@@ -63,6 +63,10 @@ export default function Home() {
                 autoAlpha: 0,
             });
 
+            gsap.set(scroll, {
+                autoAlpha: 0,
+            });
+
             // Create snap points
             ScrollTrigger.create({
                 trigger: sectionRef.current,
@@ -159,7 +163,8 @@ export default function Home() {
                     bg-transparent
                     shadow-[0_0_0_9999px_rgba(0,0,0,1)]
                     mt-16 sm:mt-12 md:mt-0
-                    mx-6 sm:mx-8 md:mx-5 lg:mx-0"
+                    mx-6 sm:mx-8 md:mx-5 lg:mx-0
+                    "
                      ref={wideBoxRef}
                 ></div>
 
@@ -177,7 +182,7 @@ export default function Home() {
                     {/* Mobile */}
                     <h1 className="block md:hidden text-7xl">
                         Hi,<br/>
-                        I'm a Frontend<br/>
+                        I'm a Full-Stack<br/>
                         Developer from<br/>
                         South Korea.
                     </h1>
@@ -185,14 +190,14 @@ export default function Home() {
                     {/* Tablet */}
                     <h1 className="hidden md:block lg:hidden text-7xl">
                         Hi,<br/>
-                        I'm a Frontend Developer<br/>
+                        I'm a Full-Stack<br/>
                         from South Korea.
                     </h1>
 
                     {/* Desktop */}
                     <h1 className="hidden lg:block text-9xl">
                         Hi,<br/>
-                        I'm a Frontend Developer<br/>
+                        I'm a Full-Stack
                         from South Korea.
                     </h1>
                 </div>

@@ -12,6 +12,13 @@ html,
 body {
     overflow-x: hidden;
     cursor: url(./assets/cursor.png) 15 15, auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a:hover,

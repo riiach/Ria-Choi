@@ -7,34 +7,24 @@ import gsap from "gsap";
 const MoreProjects = () => {
     const moreProjects = [
         {
-            name: "Travel Recommendation",
-            course: "Coursera JavaScript Programming",
-            link: "",
+            name: "RSVP Form",
+            course: "FreeCodeCamp React Certification",
+            link: "https://github.com/riiach/RSVP-Form",
         },
         {
-            name: "Express Book Reviews",
-            course: "Coursera Get Started with Cloud Native, DevOps, Agile, and NoSQL",
-            link: "",
-        },
-        {
-            name: "E-Plant Shopping",
-            course: "Coursera Developing Front-End Apps with React",
-            link: "",
-        },
-        {
-            name: "Conference Event Planner",
-            course: "Coursera Developing Front-End Apps with React",
-            link: "",
+            name: "Currency Converter",
+            course: "FreeCodeCamp React Certification",
+            link: "https://github.com/riiach/Currency-Converter",
         },
         {
             name: "Weather App",
             course: "FreeCodeCamp JavaScript Certification",
-            link: "",
+            link: "https://github.com/riiach/Weather-App",
         },
         {
             name: "Tic-Tac-Toe Game",
             course: "FreeCodeCamp Front End Development Libraries Certification",
-            link: "",
+            link: "https://github.com/riiach/Tic-Tac-Toe-Game",
         },
         {
             name: "Number Guessing Game",
@@ -42,24 +32,29 @@ const MoreProjects = () => {
             link: "",
         },
         {
-            name: "RSVP Form",
-            course: "FreeCodeCamp React Certification",
-            link: "",
-        },
-        {
-            name: "Currency Converter",
-            course: "FreeCodeCamp React Certification",
-            link: "",
-        },
-        {
             name: "Dice Roll Simulator",
             course: "Personal Project",
-            link: "",
+            link: "https://github.com/riiach/Dice-Roll-Simulator",
         },
         {
-            name: "La Maison",
+            name: "Express Book Reviews",
+            course: "Coursera Get Started with Cloud Native, DevOps, Agile, and NoSQL",
+            link: "https://github.com/riiach/expressBookReviews",
+        },
+        {
+            name: "E-Plant Shopping",
+            course: "Coursera Developing Front-End Apps with React",
+            link: "https://github.com/riiach/e-plantShopping",
+        },
+        {
+            name: "Conference Event Planner",
+            course: "Coursera Developing Front-End Apps with React",
+            link: "https://github.com/riiach/conference_event_planner",
+        },
+        {
+            name: "Event Planning Website",
             course: "Personal Project",
-            link: "",
+            link: "https://github.com/riiach/Event-Booking-Page",
         },
     ];
 
@@ -131,6 +126,7 @@ const MoreProjects = () => {
                             key={index}
                             className="text-white underline inline-flex group mb-[2px]"
                             href={item.link}
+                            target="_blank"
                         >
                             Link
                             <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />

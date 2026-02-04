@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Navbar from "../components/Navbar.jsx"
 import {ArrowUpRight} from "lucide-react"
 import { useRef, useEffect } from "react"
@@ -29,7 +30,12 @@ const Contact = () => {
             contact: "GitHub",
             address: "https://github.com/riiachoii",
             link: true,
-        }
+        },
+        {
+            contact: "Blog",
+            address: "https://riachoihowtocode.blogspot.com/",
+            link: true,
+        },
     ];
 
     const h1Ref = useRef(null);
@@ -118,11 +124,7 @@ const Contact = () => {
                                >www.riachoi.com</a>
                         </p>
                         <p className="inline-flex group">
-                            <a href=""
-                               target="_blank"
-                               rel="noreferrer"
-                               className="text-white hover:underline"
-                               >Check Out My Resume</a>
+                            <NavLink to="/resume" className="text-white hover:underline">Check Out My Resume</NavLink>
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 flex flex-col border-t border-white/60" ref={contactRef}>

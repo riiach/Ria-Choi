@@ -12,7 +12,7 @@ function NavbarMain() {
                         </p>
                         <div className="space-y-1 text-sm text-white/60">
                             <p>Entry-Level</p>
-                            <p>Frontend Developer</p>
+                            <p>Full-Stack Developer</p>
                         </div>
                     </div>
 
@@ -24,7 +24,7 @@ function NavbarMain() {
                             <p>React</p>
                             <p>Express</p>
                             <p>Node</p>
-                            <p>Cors</p>
+                            <p>API Fetch</p>
                             <p>GSAP Animation</p>
                         </div>
                     </div>
@@ -62,6 +62,19 @@ function NavbarMain() {
                             <div className="flex group">
                                 <p className="inline-flex">
                                     <a
+                                        href="https://riachoihowtocode.blogspot.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="group underline decoration-white/20 underline-offset-4 hover:text-white hover:decoration-white/60"
+                                    >
+                                        Programming Blog
+                                    </a>
+                                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
+                                </p>
+                            </div>
+                            <div className="flex group">
+                                <p className="inline-flex">
+                                    <a
                                         href="https://www.riachoi.com/"
                                         target="_blank"
                                         rel="noreferrer"
@@ -82,7 +95,7 @@ function NavbarMain() {
                         </p>
                         <p className="text-sm leading-relaxed text-white/60">
                             Hi, my name is Ria Choi — a second year computer science major and
-                            entry level front-end developer building clean, intuitive, and
+                            entry level full-stack developer building clean, intuitive, and
                             engaging web experiences.
                         </p>
                     </div>

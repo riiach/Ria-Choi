@@ -26,25 +26,22 @@ const MusicPlayer = () => {
         <div className="w-screen h-screen flex flex-col md:flex-row p-8 md:p-10 gap-4 bg-black" ref={sectionRef}>
             <NavbarSide />
             <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-between">
-                <h1 className="text-white text-2xl">Music Player</h1>
+                <h1 className="text-white text-2xl">Yogo</h1>
                 <p className="text-white/60 text-base md:text-xl">
-                    This music player allows users to play audio tracks with core playback
-                    controls, including play, pause, stop, previous, and next functionality.
-                    The project demonstrates audio handling, user interaction through media controls,
-                    and state management to control playback flow, delivering a simple
-                    and intuitive listening experience.
+                    Yogo is a mobile application built with React Native (Expo) that performs automated <span class="text-white">logo recognition </span>
+                    using the <span class="text-white">Google Vision API</span> (Logo Detection).
+                    The app accepts both <span class="text-white">image uploads </span> and <span class="text-white">remote image URLs, </span>
+                    converts them into API-compatible requests, and parses detection results in real time.
                 </p>
                 <Description />
             </div>
-            <div className="w-full md:w-1/2 h-1/2 md:h-full rounded-xl bg-gray-500"
-                /*
+            <div className="w-full md:w-1/2 h-1/2 md:h-full rounded-xl "
                         style={{
-                           backgroundImage: `url(${})`,
-                           backgroundSize: 'cover',
+                           backgroundImage: `url(https://i.ibb.co/dsw7VH4j/Yogo-Content.jpg)`,
+                           backgroundSize: 'contain',
                            backgroundRepeat: 'no-repeat',
                            backgroundPosition: 'center',
                         }}
-                 */
                 ref={boxRef}
             ></div>
         </div>

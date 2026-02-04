@@ -14,14 +14,14 @@ const Description = () => {
         : location.pathname === '/projects/eventbookingwebsite'
         ? "https://purple-herring-149129.hostingersite.com/"
         : location.pathname === '/projects/musicplayer'
-        ? ""
+        ? "https://darkslateblue-meerkat-555658.hostingersite.com/"
         : "https://www.riachoi.com";
 
     const category =
         location.pathname === '/projects/eventbookingwebsite'
         ? "JavaScript"
-        : location.pathname === 'projects/musicplayer'
-        ? "JavaScript"
+        : location.pathname === '/projects/musicplayer'
+        ? "React Native"
         : "React";
 
     const gitHubLink =
@@ -34,7 +34,7 @@ const Description = () => {
             : location.pathname === '/projects/eventbookingwebsite'
             ? "https://github.com/riiach/TravelRecommendation.git"
             : location.pathname === '/projects/musicplayer'
-            ? ""
+            ? "https://github.com/riiach/Yogo-App"
             : "https://www.riachoi.com";
 
     return (
@@ -49,7 +49,7 @@ const Description = () => {
             </div>
             <div className="flex flex-col">
                 <p className="inline-flex group">
-                    <a href={link} target="_blank" className="text-white underline">Website</a>
+                    <a href={link} target="_blank" className="text-white underline">Live</a>
                     <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
                 </p>
                 <p className="inline-flex group">

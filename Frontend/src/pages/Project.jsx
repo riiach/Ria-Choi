@@ -18,7 +18,7 @@ const Project = () => {
         },
         {
             title: "Sign Up Page",
-            techniques: ["React", "Tailwind", "Express / Node", "MySQL"],
+            techniques: ["React", "Tailwind", "Express / Node", "MySQL API"],
             img: "https://i.ibb.co/LD7qhtvc/Sign-Up-Content.png",
             link: "/projects/signuppage"
         },
@@ -30,14 +30,14 @@ const Project = () => {
         },
         {
             title: "Travel Recommendation",
-            techniques: ["HTML/CSS", "JavaScript", "Express / Node", "Node"],
+            techniques: ["HTML/CSS", "JavaScript", "Express / Node", "MySQL API"],
             img: "https://i.ibb.co/C3bRwDNT/travel-Today1.png",
             link: "/projects/eventbookingwebsite",
         },
         {
-            title: "Music Player",
-            techniques: ["HTML/CSS", "JavaScript"],
-            img: "",
+            title: "Logo Detection App",
+            techniques: ["React Native", "Express/Node", "Google Vision API"],
+            img: "https://i.ibb.co/605rgPGx/Yogo-main.jpg",
             link: "/projects/musicplayer",
         }
     ];

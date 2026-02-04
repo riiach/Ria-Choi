@@ -31,12 +31,12 @@ const Skills = () => {
         {
             number: "04",
             title: "Express",
-            content: ""
+            content: "Express Course Certificate"
         },
         {
             number: "05",
             title: "Tailwind CSS",
-            content: ""
+            content: "Library Certificate"
         },
         {
             number: "06",
@@ -46,7 +46,7 @@ const Skills = () => {
         {
             number: "07",
             title: "My SQL",
-            content: ""
+            content: "NoSQL Course Certificate"
         },
         {
             number: "08",
@@ -83,6 +83,11 @@ const Skills = () => {
             title: "Swiper",
             content: "",
         },
+        {
+            number: "15",
+            title : "GSAP Animation",
+            content: "",
+        }
     ]
 
     useEffect(() => {
@@ -113,7 +118,6 @@ const Skills = () => {
             md:text-4xl
             lg:text-4xl
             xl:text-5xl
-            2xl:text-6xl
             " ref={elRef}>
                 {skills.map((item, index) => (
                     <div className="flex items-center gap-4" key={index}>
