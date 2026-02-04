@@ -100,7 +100,7 @@ const MoreProjects = () => {
     }, []);
 
     return (
-        <div className="w-screen h-auto lg:h-screen flex flex-col justify-between bg-black" ref={sectionRef}>
+        <div className="w-screen h-[200vh] lg:h-screen flex flex-col justify-between pb-8 lg:pb-0 bg-black" ref={sectionRef}>
             <Navbar />
 
             {/* DESKTOP */}

@@ -93,10 +93,10 @@ const Certification = () => {
     }, []);
 
     return (
-        <div className="bg-black flex flex-col w-screen h-screen" ref={sectionRef}>
+        <div className="bg-black flex flex-col w-screen h-[100vh] pb-8" ref={sectionRef}>
             <Navbar />
-            <div className="flex flex-col justify-end w-full h-full p-10">
-                <div className="flex flex-col justify-end w-full text-base md:text-xl" ref={elRef}>
+            <div className="flex flex-col justify-end w-full h-full p-4 md:p-8">
+                <div className="flex flex-col justify-end w-full text-sm md:text-xl" ref={elRef}>
                     {certificates.map((certificate, index) => (
                         <div className="flex flex-row justify-between" key={index}>
                             <div className="flex flex-row gap-2">

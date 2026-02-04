@@ -33,14 +33,14 @@ const MovieSearchPage = () => {
     }, []);
 
     return (
-        <div className="w-screen h-screen flex-col md:flex md:flex-row p-8 md:p-10 bg-black" ref={sectionRef}>
+        <div className="w-screen h-[100vh] flex-col md:flex md:flex-row p-8 md:p-10 bg-black" ref={sectionRef}>
             <NavbarSide />
             <div className="w-full h-full md:w-3/4 flex flex-col pr-0 md:pr-10 justify-between">
                 <div className="w-full h-1/4 flex flex-col justify-between">
-                    <h1 className="text-white text-2xl">Movie Search Page</h1>
+                    <h1 className="text-white text-xl md:text-2xl">Movie Search Page</h1>
                 </div>
                 <div className="md:hidden w-full md:w-1/4 justify-start">
-                    <p className="text-base xl:text-xl text-white/60">
+                    <p className="text-sm md:text-base xl:text-xl text-white/60">
                         This website allows users to search for
                         movies and explore trending titles using data
                         from the <span className="text-white">Movie Database (TMDB) API. </span>

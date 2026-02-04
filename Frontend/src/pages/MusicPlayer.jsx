@@ -23,11 +23,11 @@ const MusicPlayer = () => {
     }, []);
 
     return (
-        <div className="w-screen h-screen flex flex-col md:flex-row p-8 md:p-10 gap-4 bg-black" ref={sectionRef}>
+        <div className="w-screen h-[100vh] flex flex-col md:flex-row p-8 md:p-10 gap-4 bg-black overflow-hidden" ref={sectionRef}>
             <NavbarSide />
             <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-between">
-                <h1 className="text-white text-2xl">Yogo</h1>
-                <p className="text-white/60 text-base md:text-xl">
+                <h1 className="text-white text-xl md:text-2xl">Yogo</h1>
+                <p className="text-white/60 text-sm sm:text-base md:text-xl">
                     Yogo is a mobile application built with React Native (Expo) that performs automated <span class="text-white">logo recognition </span>
                     using the <span class="text-white">Google Vision API</span> (Logo Detection).
                     The app accepts both <span class="text-white">image uploads </span> and <span class="text-white">remote image URLs, </span>

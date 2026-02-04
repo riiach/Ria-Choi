@@ -6,10 +6,10 @@ import Description from "../components/Description.jsx"
 
 const ECommerceWebsite = () => {
     return (
-        <div className="bg-black flex flex-col md:flex-row w-screen h-screen px-8 md:px-10">
+        <div className="bg-black flex flex-col md:flex-row w-screen h-[100vh] px-8 md:px-10">
             <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-between pr-6">
-                <h1 className="text-white text-2xl pt-8 md:pt-10">E-Commerce Website</h1>
-                <p className="text-white/60 text-base md:text-xl">
+                <h1 className="text-white text-xl md:text-2xl pt-8 md:pt-10">E-Commerce Website</h1>
+                <p className="text-white/60 text-sm md:text-xl">
                     This commercial website was built to explore
                     e-commerce fundamentals, focusing on <span className="text-white">shopping cart</span> functionality and
                     <span className="text-white"> backend server requests</span> during checkout.

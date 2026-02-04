@@ -24,14 +24,13 @@ const EventBookingWebsite = () => {
     }, []);
 
     return (
-        <div className="w-screen h-screen flex flex-col p-8 md:p-10 bg-black" ref={sectionRef}>
+        <div className="w-screen h-[100vh] flex flex-col p-8 md:p-10 bg-black" ref={sectionRef}>
             <NavbarSide />
             <div className="w-full h-1/2 lg:h-1/4 flex flex-col lg:flex-row gap-4">
                 <div className="w-full lg:w-1/2 h-full flex flex-col justify-between">
-                    <h1 className="text-white text-2xl">Travel Recommendation</h1>
+                    <h1 className="text-white text-xl md:text-2xl">Travel Recommendation</h1>
                     <p className="w-full lg:w-1/2 lg:hidden h-1/3 text-sm 2xl:text-base text-white/60">
                         Travel Today is a <span className="text-white">full-stack booking and search web application</span> built with pure HTML, CSS, and Vanilla JavaScript, designed to demonstrate strong JavaScript fundamentals without relying on modern frontend frameworks.
-                        This project focuses on building <span className="text-white">real-world UI logic from scratch</span>.
                         On the backend, a <span className="text-white">Node.js and Express API</span> handles form submissions and communicates with a <span className="text-white">MySQL database</span> hosted on Hostinger, allowing contact data to be stored persistently.
                     </p>
                     <Description />

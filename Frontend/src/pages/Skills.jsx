@@ -105,15 +105,15 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="flex flex-col bg-black w-screen h-screen items-center" ref={sectionRef}>
+        <div className="flex flex-col bg-black w-screen h-[100vh] items-center overflow-hidden" ref={sectionRef}>
             <Navbar />
 
             <div className="
-            absolute top-1/2 left-1/2
+            absolute top-1/2 left-1/2 justify-center
             -translate-x-1/2 -translate-y-1/2
             flex flex-col flex-wrap gap-0 md:gap-2 ml-8 md:ml-12 lg:ml-24
-            w-2/3 h-3/5 md:h-2/4
-            text-3xl
+            w-2/3 h-4/5 md:h-4/5 lg:h-4/5 xl:h-2/4
+            text-2xl
             sm:text-3xl
             md:text-4xl
             lg:text-4xl

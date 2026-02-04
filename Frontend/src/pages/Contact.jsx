@@ -90,11 +90,11 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="w-screen h-screen bg-black flex flex-col text-white" ref={sectionRef}>
+        <div className="w-screen h-[100vh] bg-black flex flex-col text-white pb-8 md:pb-0" ref={sectionRef}>
             <Navbar ref={navbarRef}/>
             <div className="w-full h-full flex flex-col justify-between p-4 md:p-10">
                 <div className="w-full h-2/3 flex flex-col md:flex-row justify-between ">
-                    <h1 className="text-8xl md:text-8xl" ref={h1Ref}>Let's work together</h1>
+                    <h1 className="text-4xl md:text-8xl" ref={h1Ref}>Let's work together</h1>
                     <div className="w-1/2 md:w-1/4 aspect-square md:h-[20rem] xl:h-[24rem] rounded-xl bg-gray-400" ref={profileRef}>
                         {/*Profile Photo goes here*/}
                     </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     <div className="
                     w-full md:w-1/4
                     mb-8 md:mb-0
-                    text-white/60 text-xl md:text-2xl
+                    text-white/60 text-xl md:text-xl lg:text-2xl
                     flex flex-col gap-1 justify-end" ref={summaryRef}>
                         <p className="inline-flex group">
                             <a href="tel:+811067645238"
@@ -127,7 +127,7 @@ const Contact = () => {
                             <NavLink to="/resume" className="text-white hover:underline">Check Out My Resume</NavLink>
                         </p>
                     </div>
-                    <div className="w-full md:w-1/2 flex flex-col border-t border-white/60" ref={contactRef}>
+                    <div className="w-full md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-col border-t border-white/60" ref={contactRef}>
                         {contacts.map((contact, index) => (
                             <div key={index} className="w-full flex flex-row justify-between border-b border-white/60 items-center pt-2">
                                 <p className="pb-2 leading-none">{contact.contact}</p>
@@ -136,7 +136,7 @@ const Contact = () => {
                                         href={contact.address}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center pb-2 leading-none underline group text-white/60 hover:text-white"
+                                        className="inline-flex items-center pb-2 leading-none text-xs sm:text-base md:text-base lg:text-xl underline group text-white/60 hover:text-white"
                                     >
                                         {contact.address.replace('mailto:', '')}
                                         <ArrowUpRight className="w-4 h-4 ml-1 hidden group-hover:inline-block transition-opacity duration-200 text-white" />

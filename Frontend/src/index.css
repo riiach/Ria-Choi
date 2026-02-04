@@ -8,12 +8,21 @@
     }
 }
 
+#root {
+    background: black;
+}
+
+* {
+    -webkit-text-size-adjust: 100%;
+}
+
 html,
 body {
-    overflow-x: hidden;
     cursor: url(./assets/cursor.png) 15 15, auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow-x: hidden;
+    background: black;
 }
 
 html::-webkit-scrollbar,

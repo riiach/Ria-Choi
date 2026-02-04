@@ -20,7 +20,7 @@ const Navbar = forwardRef(function Navbar(props, ref) {
         <nav className="flex items-center
         p-4 md:p-10 py-8 md:py-10
         bg-black w-screen h-8
-        text-sm sm:text-base" ref={ref}>
+        text-xs sm:text-base" ref={ref}>
             {/* Left (brand) */}
             <p className="text-base sm:text-base md:text-2xl text-white/90 pointer-events-none">
                 {title}

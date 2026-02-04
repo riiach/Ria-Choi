@@ -4,13 +4,13 @@ import { ArrowUpRight } from 'lucide-react'
 function NavbarMain() {
     return (
         <section className="w-full bg-black text-white">
-            <div className="w-full px-10 py-10">
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+            <div className="w-full px-6 py-4 md:px-10 md:py-10">
+                <div className="grid grid-cols-2 gap-4 md:gap-10 md:grid-cols-2 lg:grid-cols-4">
                     <div className="space-y-2">
-                        <p className="text-sm font-semibold tracking-wide text-white/90 pointer-events-none">
+                        <p className="text-sm md:text-sm font-semibold tracking-wide text-white/90 pointer-events-none">
                             Role
                         </p>
-                        <div className="space-y-1 text-sm text-white/60">
+                        <div className="space-y-1 text-sm md:text-sm text-white/60">
                             <p>Entry-Level</p>
                             <p>Full-Stack Developer</p>
                         </div>

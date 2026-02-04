@@ -10,7 +10,6 @@ const NavbarSide = forwardRef(function NavbarSide(props, ref) {
         className="
         group
         fixed top-0 right-0 z-[9999] mt-4 p-8 pt-4
-        text-sm sm:text-base
         bg-transparent hover:bg-black rounded-xl
         transition-colors duration-300 ease-out
         ">
@@ -19,7 +18,7 @@ const NavbarSide = forwardRef(function NavbarSide(props, ref) {
             </p>
 
             <div className="
-            flex flex-col gap-2 z-50 text-white/40 text-right text-xl
+            flex flex-col gap-2 z-50 text-white/40 text-right text-base md:text-xl
             opacity-0 translate-y-2
             transition-all duration-300 ease-out
             group-hover:opacity-100 group-hover:translate-y-0

@@ -58,7 +58,9 @@ const Project = () => {
         <div className="w-screen h-screen bg-black flex flex-col justify-between">
             <Navbar />
             <p className="absolute top-20 left-12 inline-flex group/4">
-                <NavLink to="/moreprojects" className="text-xl text-white">└─ 📦 <span className="hover:underline">More Projects</span></NavLink>
+                <NavLink to="/moreprojects" className="text-white
+                text-sm md:text-xl
+                ">└─ 📦 <span className="hover:underline">More Projects</span></NavLink>
                 <ArrowUpRight className="w-4 h-4 hidden group-hover/4:inline-block transition-opacity duration-200 text-white" />
             </p>
             {isLargeScreen ? (

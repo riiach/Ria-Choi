@@ -39,12 +39,6 @@ export default function Home() {
 
             // Initial state for wide box (visible on page 1)
             gsap.set(wideBox, {
-                position: "fixed",
-                top: "79vh",
-                left: "50%",
-                xPercent: -50,
-                yPercent: -50,
-                width: "95vw",
                 height: "clamp(8rem, 20vw, 20rem)",
                 borderRadius: "16px",
                 autoAlpha: 1,
@@ -60,10 +54,6 @@ export default function Home() {
                 width: "50vw",
                 height: "50vh",
                 borderRadius: "0px",
-                autoAlpha: 0,
-            });
-
-            gsap.set(scroll, {
                 autoAlpha: 0,
             });
 
@@ -142,7 +132,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="w-[100vw] h-[300vh] flex flex-col relative" ref={sectionRef}>
+        <div className="w-[100vw] h-[300vh] flex flex-col relative overflow-y-auto" ref={sectionRef}>
             <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
                 <Lottie
                     animationData={animationData}
@@ -160,6 +150,11 @@ export default function Home() {
             >
                 {/* Wide box - visible on page 1 */}
                 <div className="
+                    fixed
+                    top-3/4
+                    left-[45%] sm:left-[48%] md:left-[48%] lg:left-[50%]
+                    transform -translate-x-1/2 -translate-y-1/2
+                    w-11/12 xl:w-[94%]
                     bg-transparent
                     shadow-[0_0_0_9999px_rgba(0,0,0,1)]
                     mt-16 sm:mt-12 md:mt-0
@@ -180,7 +175,7 @@ export default function Home() {
             <section ref={section2Ref} className="relative w-[100vw] h-[100vh] z-20 flex items-center">
                 <div ref={textRef} className="absolute left-10 z-50 text-white font-medium pointer-events-none">
                     {/* Mobile */}
-                    <h1 className="block md:hidden text-7xl">
+                    <h1 className="block md:hidden text-5xl">
                         Hi,<br/>
                         I'm a Full-Stack<br/>
                         Developer from<br/>
