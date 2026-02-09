@@ -33,7 +33,7 @@ const Contact = () => {
         },
         {
             contact: "Blog",
-            address: "https://riachoihowtocode.blogspot.com/",
+            address: "https://riachoiblog.riachoi.com/",
             link: true,
         },
     ];

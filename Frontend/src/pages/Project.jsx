@@ -11,8 +11,14 @@ const Project = () => {
 
     const projects = [
         {
+            title: "Blog",
+            techniques: ["React", "React Context", "Express", "Node", "Tailwind", "Link Preview"],
+            img: "https://i.ibb.co/N25v6Ct4/Blog-Main.png",
+            link: "/projects/blog",
+        },
+        {
             title: "E-commerce Website",
-            techniques: ["React","Express / Node", "Redux", "Tailwind", "Render.com","Stripe API / Pexels API",],
+            techniques: ["React","Express / Node", "Redux", "Tailwind", "Render.com","Stripe API",],
             img: "https://i.ibb.co/8L67WKGg/shoppin-cart-main.png",
             link: "/projects/ecommercewebsite",
         },

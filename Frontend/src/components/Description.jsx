@@ -15,6 +15,8 @@ const Description = () => {
         ? "https://purple-herring-149129.hostingersite.com/"
         : location.pathname === '/projects/musicplayer'
         ? "https://darkslateblue-meerkat-555658.hostingersite.com/"
+        : location.pathname === '/projects/blog'
+        ? "https://riachoiblog.riachoi.com/"
         : "https://www.riachoi.com";
 
     const category =
@@ -35,13 +37,27 @@ const Description = () => {
             ? "https://github.com/riiach/TravelRecommendation.git"
             : location.pathname === '/projects/musicplayer'
             ? "https://github.com/riiach/Yogo-App"
+            : location.pathname === '/projects/blog'
+            ? "https://github.com/riiach/Ria-Choi-Blog.git"
             : "https://www.riachoi.com";
+    const year =
+        location.pathname === '/projects/ecommercewebsite'
+            ? "2025"
+            : location.pathname === '/projects/signuppage'
+            ? "2025"
+            : location.pathname === '/projects/moviesearchpage'
+            ? "2025"
+            : location.pathname === '/projects/eventbookingwebsite'
+            ? "2025"
+            : location.pathname === '/projects/musicplayer'
+            ? "2026"
+            : "2026";
 
     return (
         <div className="w-full flex flex-row justify-between pb-8 md:pb-10">
             <div className="flex flex-col">
                 <p className="text-white/60">Year</p>
-                <p className="text-white">2025</p>
+                <p className="text-white">{year}</p>
             </div>
             <div className="flex flex-col">
                 <p className="text-white/60">Category</p>

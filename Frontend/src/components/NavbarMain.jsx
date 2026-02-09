@@ -62,7 +62,7 @@ function NavbarMain() {
                             <div className="flex group">
                                 <p className="inline-flex">
                                     <a
-                                        href="https://riachoihowtocode.blogspot.com/"
+                                        href="https://riachoiblog.riachoi.com/"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="group underline decoration-white/20 underline-offset-4 hover:text-white hover:decoration-white/60"

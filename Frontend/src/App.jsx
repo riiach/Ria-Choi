@@ -13,6 +13,7 @@ import EventBookingWebsite from "./pages/EventBookingWebsite.jsx"
 import MusicPlayer from "./pages/MusicPlayer.jsx"
 import MoreProjects from "./pages/MoreProjects.jsx"
 import Resume from "./pages/Resume.jsx";
+import Blog from "./pages/Blog.jsx";
 
 export default function App() {
 
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/projects/moviesearchpage" element={<MovieSearchPage />} />
             <Route path="/projects/eventbookingwebsite" element={<EventBookingWebsite />} />
             <Route path="/projects/musicplayer" element={<MusicPlayer />} />
+            <Route path="/projects/blog" element={<Blog />} />
             <Route path="/moreprojects" element={<MoreProjects />} />
             <Route path="/resume" element={<Resume />} />
         </Routes>
