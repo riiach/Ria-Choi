@@ -37,7 +37,7 @@ const Blog = () => {
             <NavbarSide />
             <div className="w-full h-full md:w-3/4 flex flex-col pr-0 md:pr-10 justify-between">
                 <div className="w-full h-1/4 flex flex-col justify-between">
-                    <h1 className="text-white text-xl md:text-2xl">Movie Search Page</h1>
+                    <h1 className="text-white text-xl md:text-2xl">Blog Page</h1>
                 </div>
                 <div className="md:hidden w-full md:w-1/4 justify-start">
                     <p className="text-sm md:text-base xl:text-xl text-white/60">

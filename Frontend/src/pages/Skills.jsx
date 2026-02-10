@@ -70,8 +70,8 @@ const Skills = () => {
         },
         {
             number: "12",
-            title: "Photoshop",
-            content: "Photoshop Certificate"
+            title: "Kubernetes",
+            content: "Kubernetes Course Certificate"
         },
         {
             number: "13",

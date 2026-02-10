@@ -186,13 +186,13 @@ export default function Home() {
                     <h1 className="hidden md:block lg:hidden text-7xl">
                         Hi,<br/>
                         I'm a Full-Stack<br/>
-                        from South Korea.
+                        Developer from South Korea.
                     </h1>
 
                     {/* Desktop */}
                     <h1 className="hidden lg:block text-9xl">
                         Hi,<br/>
-                        I'm a Full-Stack
+                        I'm a Full-Stack Developer
                         from South Korea.
                     </h1>
                 </div>
