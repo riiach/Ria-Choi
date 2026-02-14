@@ -69,6 +69,7 @@ const Project = () => {
                 ">└─ 📦 <span className="hover:underline">More Projects</span></NavLink>
                 <ArrowUpRight className="w-4 h-4 hidden group-hover/4:inline-block transition-opacity duration-200 text-white" />
             </p>
+            <p className="absolute top-32 left-12 text-white">Note to Hiring Team: Initial server requests may take 1–2 minutes due to the limitations of the current free-tier hosting environment.</p>
             {isLargeScreen ? (
                 <div className="w-full h-3/4 flex flex-row p-4 md:p-10 gap-4" >
                     {projects.map((project, index) => (

@@ -13,7 +13,7 @@ const Contact = () => {
     const contacts = [
         {
             contact: "LinkedIn",
-            address: "https://www.linkedin.com/in/ria-choi-76a658309/",
+            address: "https://www.linkedin.com/in/ria-choi",
             link: true,
         },
         {
@@ -93,10 +93,14 @@ const Contact = () => {
         <div className="w-screen h-[100vh] bg-black flex flex-col text-white pb-8 md:pb-0" ref={sectionRef}>
             <Navbar ref={navbarRef}/>
             <div className="w-full h-full flex flex-col justify-between p-4 md:p-10">
-                <div className="w-full h-2/3 flex flex-col md:flex-row justify-between ">
+                <div className="w-full h-1/3 md:h-2/3 flex flex-col md:flex-row justify-between ">
                     <h1 className="text-4xl md:text-8xl" ref={h1Ref}>Let's work together</h1>
-                    <div className="w-1/2 md:w-1/4 aspect-square md:h-[20rem] xl:h-[24rem] rounded-xl bg-gray-400" ref={profileRef}>
-                        {/*Profile Photo goes here*/}
+                    <div className="mt-4 md:mt-0 w-1/2 md:w-1/4 aspect-square md:h-[20rem] xl:h-[24rem] rounded-xl overflow-hidden" ref={profileRef}>
+                        <img
+                            src="https://i.ibb.co/G3NVdrfd/Chat-GPT-Image-2026-2-14-11-37-54.png"
+                            alt="profile-photo"
+                            className="object-cover object-top"
+                        />
                     </div>
                 </div>
 
@@ -142,7 +146,7 @@ const Contact = () => {
                                         <ArrowUpRight className="w-4 h-4 ml-1 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
                                     </a>
                                 ) : (
-                                    <p className="pb-2 leading-none text-white/60">{contact.address}</p>
+                                    <p className="pb-2 leading-none text-white/60 text-xs sm:text-base md:text-base lg:text-xl">{contact.address}</p>
                                 )}
                             </div>
                         ))}

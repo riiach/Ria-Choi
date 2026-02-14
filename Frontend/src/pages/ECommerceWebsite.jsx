@@ -17,6 +17,7 @@ const ECommerceWebsite = () => {
                     giving me fine-grained control over how state flows through the application.
                     I used <span className="text-white">reducers and a centralized Redux store </span>to manage the cart system,
                     ensuring consistent behavior and a seamless shopping experience across the entire e-commerce site.
+                    <br/>*Card Number for testing 4242 4242 4242 4242
                 </p>
                 <Description/>
             </div>

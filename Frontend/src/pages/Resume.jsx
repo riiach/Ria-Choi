@@ -1,14 +1,28 @@
 import React from 'react'
 import Navbar from "../components/Navbar.jsx"
-import { Player } from "@lottiefiles/react-lottie-player";
+import { RPConfig, RPTheme, RPProvider, RPDefaultLayout, RPPages } from '@pdf-viewer/react'
+
 
 const Resume = () => {
     return (
         <div className="bg-black flex flex-col justify-between items-center w-screen h-[100vh]">
             <Navbar />
-            <div className="w-full h-full flex justify-center items-center">
-                <p className="text-white/60 text-2xl">Resume is under construction... 🛠️</p>
-            </div>
+            <RPConfig>
+                <RPTheme
+                    customVariables={{
+                        '--rp-text-color': 'gray',
+                        '--rp-toolbar-background': '#00000',
+                        '--rp-pages-background-color': '#00000',
+                    }}
+                >
+                    <RPProvider src="/RiaChoi.pdf">
+                        {/* Set the mobile responsive breakpoint to 500px */}
+                        <RPDefaultLayout style={{ height: '100%', width: '100vw' }}>
+                            <RPPages />
+                        </RPDefaultLayout>
+                    </RPProvider>
+                </RPTheme>
+            </RPConfig>
         </div>
     )
 }

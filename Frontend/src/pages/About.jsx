@@ -196,7 +196,7 @@ const About = () => {
                         <p>(2022-2024, 2026-2027)</p>
                     </div>
                     <div className="mb-4 md:mb-10" ref={revealRef2}>
-                        <p>Website Planner at <span className="text-white">WEE'S Group</span></p>
+                        <p>Technical Project Manager at <span className="text-white">WEE'S Group</span></p>
                         <p>(2020 - 2021)</p>
                     </div>
                     <div className="mb-4 md:mb-10" ref={revealRef3}>
@@ -204,13 +204,17 @@ const About = () => {
                     </div>
                     <div className="text-white" ref={revealRef4}>
                         <p>Detail Oriented</p>
-                        <p>Solution Prone</p>
+                        <p>Eager to Learn</p>
                         <p>Team Player</p>
                     </div>
                 </div>
 
-                <div className={`bg-gray-500 rounded-2xl mr-4 ${styles.box3}`} ref={photoRef}>
-                    {/* Image goes here */}
+                <div className={`rounded-2xl mr-4 overflow-hidden ${styles.box3}`} ref={photoRef}>
+                    <img
+                        src="https://i.ibb.co/G3NVdrfd/Chat-GPT-Image-2026-2-14-11-37-54.png"
+                        alt="profile-photo"
+                        className="object-cover object-top"
+                    />
                 </div>
             </section>
             <section className="w-screen h-[100vh] bg-black flex flex-col sm:flex-col md:flex-col lg:flex-row text-2xl p-8 overflow-y-hidden" ref={sectionRef2}>
