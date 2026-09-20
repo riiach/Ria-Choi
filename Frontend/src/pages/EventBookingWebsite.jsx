@@ -28,21 +28,23 @@ const EventBookingWebsite = () => {
             <NavbarSide />
             <div className="w-full h-1/2 lg:h-1/4 flex flex-col lg:flex-row gap-4">
                 <div className="w-full lg:w-1/2 h-full flex flex-col justify-between">
-                    <h1 className="text-white text-xl md:text-2xl">Travel Recommendation</h1>
+                    <h1 className="text-white text-xl md:text-2xl">LogiBox</h1>
                     <p className="w-full lg:w-1/2 lg:hidden h-1/3 text-sm 2xl:text-base text-white/60">
-                        Travel Today is a <span className="text-white">full-stack booking and search web application</span> built with pure HTML, CSS, and Vanilla JavaScript, designed to demonstrate strong JavaScript fundamentals without relying on modern frontend frameworks.
-                        On the backend, a <span className="text-white">Node.js and Express API</span> handles form submissions and communicates with a <span className="text-white">MySQL database</span> hosted on Hostinger, allowing contact data to be stored persistently.
+                        I integrated the <span className="text-white">Gemini API</span> to analyze order and delivery details
+                        and automatically generate an estimated delivery time, cost, and risk level,
+                        splitting the logic into focused components.
                     </p>
                     <Description />
                 </div>
                 <div className="w-full lg:w-1/2 h-full hidden lg:flex flex-col lg:flex-row gap-4">
                     <p className="w-full lg:w-1/2 h-1/3 mt-10 text-sm 2xl:text-base text-white/60">
-                        Travel Today is a <span className="text-white">full-stack booking and search web application</span> built with pure HTML, CSS, and Vanilla JavaScript, designed to demonstrate strong JavaScript fundamentals without relying on modern frontend frameworks.
-                        This project focuses on building <span className="text-white">real-world UI logic from scratch</span>, instead of abstracting logic away with libraries.
+                        I integrated the <span className="text-white">Gemini API</span> to analyze order and delivery details
+                        and automatically generate an estimated delivery time, cost, and risk level,
+                        splitting the logic into focused components.
                     </p>
                     <p className="w-full lg:w-1/2 h-1/3 mt-10 text-sm 2xl:text-base text-white/60">
-                        On the backend, a <span className="text-white">Node.js and Express API</span> handles form submissions and communicates with a <span className="text-white">MySQL database</span> hosted on Hostinger, allowing contact data to be stored persistently.
-                        Travel Today reflects my ability to design and implement <span className="text-white">end-to-end application flows</span>, balancing frontend interactivity with backend data handling in a clean and structured way.
+                        For service-to-service communication, I implemented a <span className="text-white">Saga pattern</span> over <span className="text-white">RabbitMQ</span>,
+                        in sync across services using topic exchange with routing-key-based queue bindings.
                     </p>
                 </div>
             </div>
@@ -51,7 +53,7 @@ const EventBookingWebsite = () => {
                     <div
                         className="w-full h-2/3 rounded-lg bg-gray-400"
                         style={{
-                           backgroundImage: 'url("https://i.ibb.co/C3bRwDNT/travel-Today1.png")',
+                           backgroundImage: 'url("https://i.ibb.co/y7dgds8/chrome-x-Rpp-FC2ezp.png")',
                            backgroundSize: 'cover',
                            backgroundRepeat: 'no-repeat',
                            backgroundPosition: 'center',
@@ -61,7 +63,7 @@ const EventBookingWebsite = () => {
                         <div
                             className="w-1/2 h-full rounded-lg bg-gray-400"
                             style={{
-                               backgroundImage: 'url("https://i.ibb.co/xSswDWsD/travel-Today2.png")',
+                               backgroundImage: 'url("https://i.ibb.co/21QmNDHF/chrome-dru-LQEhs0-J.png")',
                                backgroundSize: 'cover',
                                backgroundRepeat: 'no-repeat',
                                backgroundPosition: 'center',
@@ -70,7 +72,7 @@ const EventBookingWebsite = () => {
                         <div
                             className="w-1/2 h-full rounded-lg bg-gray-400"
                             style={{
-                               backgroundImage: 'url("https://i.ibb.co/gbB7pD0K/travel-Today3.png")',
+                               backgroundImage: 'url("https://i.ibb.co/60jtjjHB/chrome-QRe09-US9u2.png")',
                                backgroundSize: 'cover',
                                backgroundRepeat: 'no-repeat',
                                backgroundPosition: 'center',
@@ -83,7 +85,7 @@ const EventBookingWebsite = () => {
                         <div
                             className="w-1/2 h-full rounded-lg bg-gray-400"
                             style={{
-                               backgroundImage: 'url("https://i.ibb.co/FLb6GG6s/travel-Today4.png")',
+                               backgroundImage: 'url("https://i.ibb.co/1fQd9z8S/chrome-0-Ca-ZH2-Dnc-B.png")',
                                backgroundSize: 'cover',
                                backgroundRepeat: 'no-repeat',
                                backgroundPosition: 'center',
@@ -92,7 +94,7 @@ const EventBookingWebsite = () => {
                         <div
                             className="w-1/2 h-full rounded-lg bg-gray-400"
                             style={{
-                               backgroundImage: 'url("https://i.ibb.co/gbPTcpQ6/travel-Today5.png")',
+                               backgroundImage: 'url("https://i.ibb.co/qY9RrXxn/chrome-nffr710i-Dl.png")',
                                backgroundSize: 'cover',
                                backgroundRepeat: 'no-repeat',
                                backgroundPosition: 'center',
@@ -102,7 +104,7 @@ const EventBookingWebsite = () => {
                     <div
                         className="w-full h-2/3 rounded-lg bg-gray-400"
                         style={{
-                           backgroundImage: 'url("https://i.ibb.co/QvtmqRrc/travel-Today6.png")',
+                           backgroundImage: 'url("https://i.ibb.co/JRGTkCgp/chrome-1s3v-WUz-Sa-H.png")',
                            backgroundSize: 'cover',
                            backgroundRepeat: 'no-repeat',
                            backgroundPosition: 'center',

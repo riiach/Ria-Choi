@@ -64,6 +64,16 @@ const Certification = () => {
             title: "AWS Cloud Practitioner Certification",
             issuer: "Coursera",
         },
+        {
+          year: 2026,
+          title: "3 Portfolio Projects with Laravel + Blade, Vue JS, React JS",
+          issuer: "Udemy"
+        },
+        {
+            year: 2026,
+            title: "Sparta AI & JAVA Boot Camp",
+            issuer: "Sparta Boot Camp"
+        }
     ];
 
     const sectionRef = useRef(null);
@@ -111,7 +121,7 @@ const Certification = () => {
                     <p>Check out my Linked In profile for verifications.</p>
                     <p className="inline-flex group">
                         <a href="https://www.linkedin.com/in/ria-choi-76a658309/" target="_blank" className="underline">Link</a>
-                        <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
+                        <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                     </p>
                 </div>
             </div>

@@ -5,20 +5,21 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavbarSide from "../components/NavbarSide.jsx";
 import backgroundImg from "../assets/backgroundImg.png";
+import profileImg from "../assets/profile.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
     const abilities = [
-        "Full Stack Development",
-        "Pseudocode Driven Development",
-        "Code Debugging",
-        "Data Management",
-        "Market Standard Workflow",
+        "Frontend Development",
+        "Backend Development",
+        "Agile Methodology",
+        "Dev Lead",
+        "MSA",
         "Cloud Management",
-        "API Fetch",
+        "Service Communication",
         "Optimization",
-        "Publishing"
+        "Deployment"
     ];
 
     const positions = [
@@ -192,26 +193,35 @@ const About = () => {
                  ${styles.box2}`}>
                     <div className="mb-4 md:mb-10" ref={revealRef1}>
                         <p>Currently computer science student at</p>
-                        <p className="text-white">Oregon State University (Ecampus)</p>
-                        <p>(2022-2024, 2026-2027)</p>
+                        <p className="text-white">Oregon State University</p>
+                        <p>(2022-2024, 2026-2027), BS, Corvallis OR</p>
                     </div>
                     <div className="mb-4 md:mb-10" ref={revealRef2}>
                         <p>Technical Project Manager at <span className="text-white">WEE'S Group</span></p>
-                        <p>(2020 - 2021)</p>
+                        <p>(2020)</p>
+                        <br/>
+                        <p><span className="text-white">JPA Java BootCamp</span> - AI Integration & Spring Boot</p>
+                        <p>Sparta BootCamp, (2026)</p>
+                        <br/>
+                        <p>Volunteering as an <span className="text-white">Website Manager</span> in Antioch International Ministry</p>
+                        <p>Busan, South Korea (2025-2026)</p>
                     </div>
                     <div className="mb-4 md:mb-10" ref={revealRef3}>
                         <p>Grew up in Busan, South Korea</p>
+                        <p>Graduated Elementary School in Auckland, New Zealand</p>
+                        <p>Lived in Sydney, Australia</p>
                     </div>
                     <div className="text-white" ref={revealRef4}>
                         <p>Detail Oriented</p>
                         <p>Eager to Learn</p>
                         <p>Team Player</p>
+                        <p>Global Leader</p>
                     </div>
                 </div>
 
                 <div className={`rounded-2xl mr-4 overflow-hidden ${styles.box3}`} ref={photoRef}>
                     <img
-                        src="https://i.ibb.co/G3NVdrfd/Chat-GPT-Image-2026-2-14-11-37-54.png"
+                        src={profileImg}
                         alt="profile-photo"
                         className="object-cover object-top"
                     />

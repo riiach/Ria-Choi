@@ -11,21 +11,21 @@ function NavbarMain() {
                             Role
                         </p>
                         <div className="space-y-1 text-sm md:text-sm text-white/60">
-                            <p>Entry-Level</p>
-                            <p>Full-Stack Developer</p>
+                            <p>Web Developer</p>
+                            <p>Full Stack Developer</p>
+                            <p>Software Engineer</p>
                         </div>
                     </div>
 
                     <div className="space-y-2">
                         <p className="text-sm font-semibold tracking-wide text-white/90">
-                            Specialised in
+                            Languages
                         </p>
                         <div className="space-y-1 text-sm text-white/60">
-                            <p>React</p>
-                            <p>Express</p>
-                            <p>Node</p>
-                            <p>API Fetch</p>
-                            <p>GSAP Animation</p>
+                            <p>JavaScript</p>
+                            <p>TypeScript</p>
+                            <p>Java</p>
+                            <p>PHP</p>
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@ function NavbarMain() {
                                         +82 10 6764 5238
                                     </a>
                                 </p>
-                                <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
+                                <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                             </div>
                             <div className="flex group">
                                 <p className="inline-flex">
@@ -57,19 +57,19 @@ function NavbarMain() {
                                         Linked In
                                     </a>
                                 </p>
-                                <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
+                                <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                             </div>
                             <div className="flex group">
                                 <p className="inline-flex">
                                     <a
-                                        href="https://riachoiblog.riachoi.com/"
+                                        href="https://riachoi-services.vercel.app/blog"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="group underline decoration-white/20 underline-offset-4 hover:text-white hover:decoration-white/60"
                                     >
-                                        Programming Blog
+                                        Tech Blog
                                     </a>
-                                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
+                                    <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                 </p>
                             </div>
                             <div className="flex group">
@@ -82,7 +82,7 @@ function NavbarMain() {
                                     >
                                         www.riachoi.com
                                     </a>
-                                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white" />
+                                    <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                 </p>
                             </div>
                         </div>
@@ -94,9 +94,7 @@ function NavbarMain() {
                             Brief
                         </p>
                         <p className="text-sm leading-relaxed text-white/60">
-                            Hi, my name is Ria Choi — a second year computer science major and
-                            entry level full-stack developer building clean, intuitive, and
-                            engaging web experiences.
+                            A detailed oriented full stack developer with a passion for creating innovative and user-friendly web applications. Proficient in both front-end and back-end technologies, I specialize in building responsive and interactive web experiences.
                         </p>
                     </div>
                 </div>

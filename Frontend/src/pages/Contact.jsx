@@ -5,6 +5,7 @@ import {ArrowUpRight} from "lucide-react"
 import { useRef, useEffect } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import profileImage from "../assets/profile.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +34,7 @@ const Contact = () => {
         },
         {
             contact: "Blog",
-            address: "https://riachoiblog.riachoi.com/",
+            address: "https://riachoi-services.vercel.app/blog",
             link: true,
         },
     ];
@@ -97,9 +98,9 @@ const Contact = () => {
                     <h1 className="text-4xl md:text-8xl" ref={h1Ref}>Let's work together</h1>
                     <div className="mt-4 md:mt-0 w-1/2 md:w-1/4 aspect-square md:h-[20rem] xl:h-[24rem] rounded-xl overflow-hidden" ref={profileRef}>
                         <img
-                            src="https://i.ibb.co/G3NVdrfd/Chat-GPT-Image-2026-2-14-11-37-54.png"
+                            src={profileImage}
                             alt="profile-photo"
-                            className="object-cover object-top"
+                            className="w-full h-full  object-cover object-center "
                         />
                     </div>
                 </div>
@@ -117,36 +118,36 @@ const Contact = () => {
                             <a href="tel:+811067645238"
                                target="_blank"
                                rel="noreferrer"
-                               className="hover:underline hover:text-white"
+                               className="hover:underline hover:text-white transition-colors duration-300 ease-in"
                             >+82 10 6764 5238</a>
                         </p>
                         <p className="inline-flex group">
                             <a href="https://www.riachoi.com/"
                                target="_blank"
                                rel="noreferrer"
-                               className="hover:underline hover:text-white"
+                               className="hover:underline hover:text-white transition-colors duration-300 ease-in"
                                >www.riachoi.com</a>
                         </p>
                         <p className="inline-flex group">
-                            <NavLink to="/resume" className="text-white hover:underline">Check Out My Resume</NavLink>
+                            <NavLink to="/resume" className="text-white hover:underline transition-opacity duration-300 ease-in">Check Out My Resume</NavLink>
                         </p>
                     </div>
                     <div className="w-full md:w-2/3 lg:w-2/3 xl:w-1/2 flex flex-col border-t border-white/60" ref={contactRef}>
                         {contacts.map((contact, index) => (
                             <div key={index} className="w-full flex flex-row justify-between border-b border-white/60 items-center pt-2">
-                                <p className="pb-2 leading-none">{contact.contact}</p>
+                                <p className="pb-2 pl-2 leading-none">{contact.contact}</p>
                                 {contact.link ? (
                                     <a
                                         href={contact.address}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center pb-2 leading-none text-xs sm:text-base md:text-base lg:text-xl underline group text-white/60 hover:text-white"
+                                        className="inline-flex items-center pb-2 leading-none text-xs sm:text-base md:text-base lg:text-xl underline group text-white/60 hover:text-white transition-colors duration-300 ease-in"
                                     >
                                         {contact.address.replace('mailto:', '')}
-                                        <ArrowUpRight className="w-4 h-4 ml-1 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
+                                        <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                     </a>
                                 ) : (
-                                    <p className="pb-2 leading-none text-white/60 text-xs sm:text-base md:text-base lg:text-xl">{contact.address}</p>
+                                    <p className="pb-2 pr-4 leading-none text-white/60 text-xs sm:text-base md:text-base lg:text-xl">{contact.address}</p>
                                 )}
                             </div>
                         ))}

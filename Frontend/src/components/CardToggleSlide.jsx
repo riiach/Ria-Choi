@@ -5,9 +5,9 @@ import { Draggable } from 'gsap/Draggable';
 
 gsap.registerPlugin(Draggable);
 
-const TestImg1 = "https://i.ibb.co/LD7qhtvc/Sign-Up-Content.png";
-const TestImg2 = "https://i.ibb.co/MyKtqk5R/Sign-Up-Main.png";
-const TestImg3 = "https://i.ibb.co/9kMYfTVT/Sign-Up-Content2.png";
+const TestImg1 = "https://i.ibb.co/RTDWPwFp/c52e951ed0dd884aeb8341d76de5730f8b588253-1237x608.avif";
+const TestImg2 = "https://i.ibb.co/vCM2jQ2L/7dc0dce19b0fcd2668fcd94b8f831fbca2e8aec6-1144x577.avif";
+const TestImg3 = "https://i.ibb.co/GfRyKfTd/1c027bc2bf886685bd3ad641873c19e08e1dc6f4-1536x1024.avif";
 
 
 const CardToggleSlide = () => {

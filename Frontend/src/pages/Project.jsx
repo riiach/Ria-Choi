@@ -11,9 +11,27 @@ const Project = () => {
 
     const projects = [
         {
-            title: "Blog",
-            techniques: ["React", "React Context", "Express", "Node", "Tailwind", "Link Preview"],
-            img: "https://i.ibb.co/N25v6Ct4/Blog-Main.png",
+            title: "KOK",
+            techniques: ["Dev Lead", "Java", "AWS", "MSA", "Redis / Caching", "Observation"],
+            img: "https://i.ibb.co/7tPktfVx/chrome-tf-Z8-KTj6-Qv.png",
+            link: "/projects/signuppage"
+        },
+        {
+            title: "LogiBox",
+            techniques: ["Java", "MSA", "Redis / Caching", "RabbitMQ", "GeminiAPI"],
+            img: "https://i.ibb.co/XrqgnBHH/chrome-Lcj-UO0ohm-B.png",
+            link: "/projects/eventbookingwebsite",
+        },
+        {
+            title: "TodayEats",
+            techniques: ["Java", "Redis / Caching", "Auth"],
+            img: "https://i.ibb.co/m5z38xNL/chrome-zu-YRf-Fi-Nrv.png",
+            link: "/projects/musicplayer",
+        },
+        {
+            title: "Tech Blog",
+            techniques: ["Next.js", "PostgreSQL", "Docker", "Resend", "Sanity"],
+            img: "https://i.ibb.co/yF32Qydw/chrome-62ww0cffl-P.png",
             link: "/projects/blog",
         },
         {
@@ -23,28 +41,10 @@ const Project = () => {
             link: "/projects/ecommercewebsite",
         },
         {
-            title: "Sign Up Page",
-            techniques: ["React", "Tailwind", "Express / Node", "MySQL API"],
-            img: "https://i.ibb.co/LD7qhtvc/Sign-Up-Content.png",
-            link: "/projects/signuppage"
-        },
-        {
             title: "Movie Search Page",
             techniques: ["React", "Tailwind", "Express / Node", "TMDB Data Base API"],
             img: "https://i.ibb.co/F2X8bm0/Movie-Search-Content.png",
             link: "/projects/moviesearchpage",
-        },
-        {
-            title: "Travel Recommendation",
-            techniques: ["HTML/CSS", "JavaScript", "Express / Node", "MySQL API"],
-            img: "https://i.ibb.co/C3bRwDNT/travel-Today1.png",
-            link: "/projects/eventbookingwebsite",
-        },
-        {
-            title: "Logo Detection App",
-            techniques: ["React Native", "Express/Node", "Google Vision API"],
-            img: "https://i.ibb.co/605rgPGx/Yogo-main.jpg",
-            link: "/projects/musicplayer",
         }
     ];
 
@@ -63,11 +63,16 @@ const Project = () => {
     return (
         <div className="w-screen h-screen bg-black flex flex-col justify-between">
             <Navbar />
-            <p className="absolute top-20 left-12 inline-flex group/4">
-                <NavLink to="/moreprojects" className="text-white
-                text-sm md:text-xl
-                ">└─ 📦 <span className="hover:underline">More Projects</span></NavLink>
-                <ArrowUpRight className="w-4 h-4 hidden group-hover/4:inline-block transition-opacity duration-200 text-white" />
+            <p className="absolute top-20 left-12 inline-flex items-center group/4">
+                <NavLink to="/moreprojects" className="text-white text-sm md:text-xl">
+                    └─ 📦{" "}
+                    <span className="group-hover/4:underline transition-all duration-300 ease-in-out">
+                        More Projects
+                    </span>
+                </NavLink>
+                <ArrowUpRight
+                    className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover/4:opacity-100 group-hover/4:translate-x-0 transition-all duration-300 ease-in-out"
+                />
             </p>
             <p className="absolute top-32 left-12 text-white">Note to Hiring Team: Initial server requests may take 1–2 minutes due to the limitations of the current free-tier hosting environment.</p>
             {isLargeScreen ? (
@@ -76,8 +81,8 @@ const Project = () => {
                         <div className="flex flex-col w-full h-full justify-between" key={index}>
                             <div>
                                 <div className="mb-4 inline-flex group">
-                                    <NavLink to={project.link} className="text-white hover:underline">{project.title}</NavLink>
-                                    <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
+                                    <NavLink to={project.link} className="text-white hover:underline transition-all duration-300 ease-in-out">{project.title}</NavLink>
+                                    <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                 </div>
                                 <div className="flex flex-col justify-start text-white/60">
                                     {project.techniques.map((technique, techIndex) => (
@@ -126,7 +131,7 @@ const Project = () => {
                                             <NavLink to={project.link} className="text-white hover:underline">
                                                 {project.title}
                                             </NavLink>
-                                            <ArrowUpRight className="w-4 h-4 hidden group-hover:inline-block transition-opacity duration-200 text-white" />
+                                            <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                         </div>
                                         <div className="flex flex-col justify-start text-white/60">
                                             {project.techniques.map((technique, techIndex) => (

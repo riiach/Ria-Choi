@@ -37,7 +37,7 @@ const Blog = () => {
             <NavbarSide />
             <div className="w-full h-full md:w-3/4 flex flex-col pr-0 md:pr-10 justify-between">
                 <div className="w-full h-1/4 flex flex-col justify-between">
-                    <h1 className="text-white text-xl md:text-2xl">Blog Page</h1>
+                    <h1 className="text-white text-xl md:text-2xl">Tech Blog</h1>
                 </div>
                 <div className="md:hidden w-full md:w-1/4 justify-start">
                     <p className="text-sm md:text-base xl:text-xl text-white/60">
@@ -56,7 +56,7 @@ const Blog = () => {
                     <div
                         className="w-full aspect-square rounded-xl bg-gray-400"
                         style={{
-                            backgroundImage: "url('https://i.ibb.co/wFmFTt4L/Blog-Content.png')",
+                            backgroundImage: "url('https://i.ibb.co/mVr5x6Nc/chrome-JVCWVF1p-Z7.png')",
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
@@ -66,14 +66,12 @@ const Blog = () => {
             </div>
             <div className="hidden md:block w-full md:w-1/4 self-end">
                 <p className="text-base xl:text-xl text-white/60" ref={textXlREf}>
-                    The platform is built with React and focuses heavily on content structure and user experience.
-                    Instead of treating blog posts as static text,
-                    I designed a <span className="text-white">flexible rendering</span> system that supports multiple content types like headings, quotes, lists, and references,
-                    making each post easy to read and <span className="font-semibold">visually structured.</span>
-                    While building the search bar feature,
-                    I implemented <span className="text-white">React Context</span> to manage shared search state across components.
-                    This allowed the search input and results to stay synchronized without excessive prop drilling,
-                    improving both code organization and scalability.
+                    Riachoi Services is a Next.js web application with a custom Express server,
+                    built with Prisma, PostgreSQL, Docker, and Resend.
+                    The old blog rendered posts using custom logic hand-coded to parse formatting rules from raw files,
+                    so I replaced it with <span className="text-white">Sanity as a headless CMS</span> for structured content and cleaner rendering.
+                    Building this project taught me a lot about <span className="text-white">server-side rendering</span> with Next.js
+                    and how to properly structure and reuse React components.
                 </p>
             </div>
         </div>

@@ -15,12 +15,12 @@ const Skills = () => {
     const skills = [
         {
             number: "01",
-            title: "React",
+            title: "React/Next.js",
             content: "React Certificate"
         },
         {
             number: "02",
-            title: "JavaScript",
+            title: "JavaScript/TypeScript",
             content: "JavaScript Certificate"
         },
         {
@@ -30,17 +30,17 @@ const Skills = () => {
         },
         {
             number: "04",
-            title: "Express",
+            title: "Express/Node.js",
             content: "Express Course Certificate"
         },
         {
             number: "05",
-            title: "Tailwind CSS",
+            title: "Tailwind CSS/Framer Motion",
             content: "Library Certificate"
         },
         {
             number: "06",
-            title: "Mongo DB",
+            title: "PostgreSQL/Prisma",
             content: ""
         },
         {
@@ -85,7 +85,17 @@ const Skills = () => {
         },
         {
             number: "15",
-            title : "GSAP Animation",
+            title: "GSAP Animation",
+            content: "",
+        },
+        {
+        number: "16",
+        title: "Laravel, Blade, Filament",
+        content: "",
+        },
+        {
+            number: "17",
+            title: "Vue JS",
             content: "",
         }
     ]
@@ -109,10 +119,10 @@ const Skills = () => {
             <Navbar />
 
             <div className="
-            absolute top-1/2 left-1/2 justify-center
+            absolute top-1/2 left-1/2 justify-start
             -translate-x-1/2 -translate-y-1/2
-            flex flex-col flex-wrap gap-0 md:gap-2 ml-8 md:ml-12 lg:ml-24
-            w-2/3 h-4/5 md:h-4/5 lg:h-4/5 xl:h-2/4
+            flex flex-col flex-wrap gap-0 md:gap-2 ml-8 md:ml-12
+            w-2/3 h-4/5 md:h-4/5 lg:h-4/5 xl:h-2/3
             text-2xl
             sm:text-3xl
             md:text-4xl

@@ -27,13 +27,13 @@ const Navbar = forwardRef(function Navbar(props, ref) {
             </p>
 
             {/* Right (menu) */}
-            <div className="ml-auto flex gap-2 sm:gap-2 md:gap-4 lg:gap-6 text-white/60">
-                {location.pathname === '/' ? "" : <NavLink to="/" className="hover:text-white/90">Home</NavLink>}
-                {location.pathname === '/about' ? "" : <NavLink to="/about" className="hover:text-white/90">About</NavLink>}
-                {location.pathname === '/skills' ? "" : <NavLink to="/skills" className="hover:text-white/90">Skills</NavLink>}
-                {location.pathname === '/projects' ? "" : <NavLink to="/projects" className="hover:text-white/90">Projects</NavLink>}
-                {location.pathname === '/certification' ? "" : <NavLink to="/certification" className="hover:text-white/90">Certification</NavLink>}
-                {location.pathname === '/contact' ? "" : <NavLink to="/contact" className="hover:text-white/90">Contact</NavLink>}
+            <div className="ml-auto flex gap-2 sm:gap-2 md:gap-4 lg:gap-4 text-white/60 transition-colors duration-500 ease-out">
+                {location.pathname === '/' ? "" : <NavLink to="/" className="hover:text-white/90 transition-colors duration-500 ease-out">Home</NavLink>}
+                {location.pathname === '/about' ? "" : <NavLink to="/about" className="hover:text-white/90 transition-colors duration-500 ease-out">About</NavLink>}
+                {location.pathname === '/skills' ? "" : <NavLink to="/skills" className="hover:text-white/90 transition-colors duration-500 ease-out">Skills</NavLink>}
+                {location.pathname === '/projects' ? "" : <NavLink to="/projects" className="hover:text-white/90 transition-colors duration-500 ease-out">Projects</NavLink>}
+                {location.pathname === '/certification' ? "" : <NavLink to="/certification" className="hover:text-white/90 transition-colors duration-500 ease-out">Certification</NavLink>}
+                {location.pathname === '/contact' ? "" : <NavLink to="/contact" className="hover:text-white/90 transition-colors duration-500 ease-out">Contact</NavLink>}
             </div>
         </nav>
     );

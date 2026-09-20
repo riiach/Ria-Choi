@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar.jsx'
 import {ArrowUpRight} from "lucide-react";
 import {useRef, useEffect} from "react";
@@ -6,6 +6,36 @@ import gsap from "gsap";
 
 const MoreProjects = () => {
     const moreProjects = [
+        {
+          name: "Vue & Laravel + Blade Portfolio Page",
+          course: "Udemy",
+          link: "https://github.com/riiach/lara-vue-portfolio"
+        },
+        {
+          name: "Logo Detection App",
+          course: "Personal Project",
+          link: "https://darkslateblue-meerkat-555658.hostingersite.com/",
+        },
+        {
+          name: "Travel Scheduling and Calendar",
+          course: "Personal Project",
+          link: "https://purple-herring-149129.hostingersite.com/"
+        },
+        {
+          name: "Sign Up Page",
+          course: "Great Frontend",
+          link: "https://darkgrey-beaver-446774.hostingersite.com/",
+        },
+        {
+          name: "Cinematic Flip Card - Framer Motion",
+          course: "Personal Project",
+          link: "https://mtl-banner.vercel.app/"
+        },
+        {
+          name: "Older Blog",
+          course: "Personal Project",
+          link: "https://riachoiblog.riachoi.com/",
+        },
         {
             name: "RSVP Form",
             course: "FreeCodeCamp React Certification",
@@ -52,7 +82,7 @@ const MoreProjects = () => {
             link: "https://github.com/riiach/conference_event_planner",
         },
         {
-            name: "Event Planning Website",
+            name: "Event Planning Website - GSAP",
             course: "Personal Project",
             link: "https://github.com/riiach/Event-Booking-Page",
         },
@@ -63,6 +93,8 @@ const MoreProjects = () => {
     const listDesktopRef2 = useRef(null);
     const listDesktopRef3 = useRef(null);
     const listMobileRef = useRef(null);
+
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -109,14 +141,18 @@ const MoreProjects = () => {
                 <div className="w-1/5 flex flex-col" ref={listDesktopRef1}>
                     <h1 className="text-white mb-6">Project Name</h1>
                     {moreProjects.map((item, index) => (
-                        <p className="text-white/60 mb-[2px]" key={index}>{item.name}</p>
+                        <p className={`mb-[2px] group-hover/div:underline transition-colors duration-300 ease-in-out
+                        ${hoveredIndex === index ? 'text-white' : 'text-white/60'}
+                        `} key={index}>{item.name}</p>
                     ))}
                 </div>
 
                 <div className="w-3/5 flex flex-col" ref={listDesktopRef2}>
                     <h1 className="text-white mb-6">Learning Course</h1>
                     {moreProjects.map((item, index) => (
-                        <p className="text-white/60 mb-[2px]" key={index}>{item.course}</p>
+                        <p className={` mb-[2px] transition-colors duration-300 ease-in-out
+                        ${hoveredIndex === index ? 'text-white' : 'text-white/60'}
+                        `} key={index}>{item.course}</p>
                     ))}
                 </div>
 
@@ -127,9 +163,11 @@ const MoreProjects = () => {
                             className="text-white underline inline-flex group mb-[2px]"
                             href={item.link}
                             target="_blank"
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
                         >
                             Link
-                            <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                            <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out" />
                         </a>
                     ))}
                 </div>
