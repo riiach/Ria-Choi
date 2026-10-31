@@ -6,18 +6,18 @@ const Description = () => {
     const location = useLocation();
     const link =
         location.pathname === '/projects/ecommercewebsite'
-        ? "https://powderblue-pheasant-997935.hostingersite.com/"
+        ? "https://ria-everything-shop.vercel.app/"
         : location.pathname === '/projects/signuppage'
         ? "https://riachoi-services.vercel.app/blog/traffic-peak-and-msa-backend-design"
         : location.pathname === '/projects/moviesearchpage'
-        ? "https://honeydew-pigeon-971328.hostingersite.com/"
+        ? "https://ria-movie-search.vercel.app/"
         : location.pathname === '/projects/eventbookingwebsite'
         ? "https://riachoi-services.vercel.app/blog/b2b-ai-logistics-systemic-backend-design"
         : location.pathname === '/projects/musicplayer'
         ? "https://riachoi-services.vercel.app/blog/spring-boot-backend-delivery-app"
         : location.pathname === '/projects/blog'
         ? "https://riachoi-services.vercel.app/"
-        : "https://www.riachoi.com";
+        : "https://ria-choi-portfolio.vercel.app";
 
     const category =
         location.pathname === '/projects/blog'
@@ -39,7 +39,7 @@ const Description = () => {
             ? "https://github.com/GolemOnce/Sparta-TodayEats"
             : location.pathname === '/projects/blog'
             ? "https://github.com/riiach/riachoi_services#ria-choi-portfolio--blog-platform"
-            : "https://www.riachoi.com";
+            : "https://ria-choi-portfolio.vercel.app";
     const year =
         location.pathname === '/projects/ecommercewebsite'
             ? "2025"
