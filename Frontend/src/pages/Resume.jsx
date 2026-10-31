@@ -15,7 +15,7 @@ const Resume = () => {
                         '--rp-pages-background-color': '#00000',
                     }}
                 >
-                    <RPProvider src="/RiaChoi.pdf">
+                    <RPProvider src="/Ria_Choi_Resume_October.pdf">
                         {/* Set the mobile responsive breakpoint to 500px */}
                         <RPDefaultLayout style={{ height: '100%', width: '100vw' }}>
                             <RPPages />

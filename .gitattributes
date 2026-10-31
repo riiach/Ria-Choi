@@ -1,3 +1,6 @@
 *.json filter=lfs diff=lfs merge=lfs -text
 animation.json filter=lfs diff=lfs merge=lfs -text
 Frontend/src/assets/animation.json filter=lfs diff=lfs merge=lfs -text
+
+Frontend/package.json -filter -diff -merge text
+Frontend/package-lock.json -filter -diff -merge text

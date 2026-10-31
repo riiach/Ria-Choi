@@ -215,7 +215,7 @@ const About = () => {
                         <p>Detail Oriented</p>
                         <p>Eager to Learn</p>
                         <p>Team Player</p>
-                        <p>Global Leader</p>
+                        <p>Easy to work with</p>
                     </div>
                 </div>
 

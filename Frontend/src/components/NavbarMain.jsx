@@ -12,8 +12,7 @@ function NavbarMain() {
                         </p>
                         <div className="space-y-1 text-sm md:text-sm text-white/60">
                             <p>Web Developer</p>
-                            <p>Full Stack Developer</p>
-                            <p>Software Engineer</p>
+                            <p>Frontend Developer</p>
                         </div>
                     </div>
 
@@ -75,12 +74,12 @@ function NavbarMain() {
                             <div className="flex group">
                                 <p className="inline-flex">
                                     <a
-                                        href="https://www.riachoi.com/"
+                                        href="https://ria-choi-portfolio.vercel.app/"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="group underline decoration-white/20 underline-offset-4 hover:text-white hover:decoration-white/60"
                                     >
-                                        www.riachoi.com
+                                        ria-choi-portfolio.vercel.app
                                     </a>
                                     <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
                                 </p>
@@ -94,7 +93,7 @@ function NavbarMain() {
                             Brief
                         </p>
                         <p className="text-sm leading-relaxed text-white/60">
-                            A detailed oriented full stack developer with a passion for creating innovative and user-friendly web applications. Proficient in both front-end and back-end technologies, I specialize in building responsive and interactive web experiences.
+                            I enjoy building thoughtful, user-friendly websites and learning through each project. I value clear communication, welcome feedback, and do my best to be a reliable, easy-to-work-with teammate.
                         </p>
                     </div>
                 </div>

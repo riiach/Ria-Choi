@@ -14,17 +14,17 @@ const MoreProjects = () => {
         {
           name: "Logo Detection App",
           course: "Personal Project",
-          link: "https://darkslateblue-meerkat-555658.hostingersite.com/",
+          link: "https://ria-yogo.vercel.app/",
         },
         {
           name: "Travel Scheduling and Calendar",
           course: "Personal Project",
-          link: "https://purple-herring-149129.hostingersite.com/"
+          link: "https://ria-travel-today.vercel.app/"
         },
         {
           name: "Sign Up Page",
           course: "Great Frontend",
-          link: "https://darkgrey-beaver-446774.hostingersite.com/",
+          link: "https://ria-signup.vercel.app/",
         },
         {
           name: "Cinematic Flip Card - Framer Motion",
@@ -34,7 +34,7 @@ const MoreProjects = () => {
         {
           name: "Older Blog",
           course: "Personal Project",
-          link: "https://riachoiblog.riachoi.com/",
+          link: "https://ria-older-blog.vercel.app/",
         },
         {
             name: "RSVP Form",

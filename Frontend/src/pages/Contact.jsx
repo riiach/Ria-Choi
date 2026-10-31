@@ -122,11 +122,11 @@ const Contact = () => {
                             >+82 10 6764 5238</a>
                         </p>
                         <p className="inline-flex group">
-                            <a href="https://www.riachoi.com/"
+                            <a href="https://ria-choi-portfolio.vercel.app/"
                                target="_blank"
                                rel="noreferrer"
                                className="hover:underline hover:text-white transition-colors duration-300 ease-in"
-                               >www.riachoi.com</a>
+                               >ria-choi-portfolio.vercel.app</a>
                         </p>
                         <p className="inline-flex group">
                             <NavLink to="/resume" className="text-white hover:underline transition-opacity duration-300 ease-in">Check Out My Resume</NavLink>
