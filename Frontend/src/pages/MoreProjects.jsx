@@ -79,7 +79,7 @@ const MoreProjects = () => {
         {
             name: "Conference Event Planner",
             course: "Coursera Developing Front-End Apps with React",
-            link: "https://github.com/riiach/conference_event_planner",
+            link: "https://ria-event-planner.vercel.app/",
         },
         {
             name: "Event Planning Website - GSAP",
